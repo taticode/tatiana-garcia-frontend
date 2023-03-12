@@ -1,0 +1,17 @@
+
+
+@import 'src/styles.scss';
+
+
+
+
+.block-down{
+  width: 100%;
+  position: absolute;
+  bottom: var(--p2);
+  @include flexible(flex, row, nowrap, center, center ); 
+}
+.btn-down{
+  position: relative;
+
+}

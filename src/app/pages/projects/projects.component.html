@@ -1,0 +1,23 @@
+
+<section class="big-block projects">
+    <h2 class="big-block__h2">Proyectos</h2>
+    <div class="cards" *ngIf="projects">
+        <a class="cards__card" href="#" *ngFor="let project of projects" style="background-image: url({{project.projectImg}})">
+            <div class="cards__info">
+
+                <h3 class="cards__title">{{project.name}}</h3>
+                <p class="cards__description">{{project.description}}</p>
+            </div>
+            <div class="cards__info">
+                <h4 class="cards__title">Tecnologías utilizadas</h4>
+                <div class="icons" *ngIf="project.tech" >
+                    <img *ngFor="let tech of project.tech"  [src]=" activePath + tech.techName+ '.svg'" [alt]="tech.description" [title]="tech.description" class="icons__item">
+                    <p>{{project.tech.techName}}</p>
+                </div>
+            </div>
+    
+        </a>
+
+    
+    </div>
+</section>

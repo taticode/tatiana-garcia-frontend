@@ -1,0 +1,131 @@
+
+@import '_colors';
+@import '_grid';
+@import '_variables';
+@import '_reset';
+@import '_mixins';
+@import '_states';
+
+
+@font-face {
+        font-family: 'Arial Narrow';
+        src:    local('Arial Narrow'),
+                local('Arial-Narrow'),
+                url('assets/fonts/Arial Narrow.ttf') format("ttf");
+}
+
+@font-face {
+        font-family: 'Futura';
+        src:    local('Futura'),
+                local('Futura'),
+                url('assets/fonts/Futura.ttc') format("ttf");
+}
+
+@font-face {
+        font-family: 'Impact';
+        src:local('Impact'),
+        local('Impact'),
+        url('assets/fonts/Impact.ttf') format("ttf");
+}
+
+
+body{ 
+        background-color        : var(--background);
+        background-image        : url('/assets/background/ruido.svg');
+        color                   : var(--font-color);
+
+}
+
+h1{
+        font-family: 'Impact';
+        font-size: map-get($sizes , "size-h1" );
+}
+
+h2{
+        font-family     : 'Impact';
+        font-size       : map-get($sizes , "size-h2" );
+}
+
+
+h3{
+        font-family     : 'Futura';
+        font-size       : map-get($sizes , "size-h3" );
+}
+h4{
+        font-family     : 'Futura';
+        font-size       : map-get($sizes , "size-h4" );
+}
+
+button{
+        outline: none;
+}
+
+.header, .main{
+        padding: 0 var(--p4);
+
+}
+.main{
+        max-width: 1440px;
+        margin: 0 auto;
+}
+
+.big-block{
+
+        padding-bottom: var(--p4);
+
+        &__h2{
+                margin-bottom: var(--p1);
+        }
+
+}
+.hero{
+        min-height: 100vh;
+        @include flexible(flex, column, nowrap, center, center ); 
+        &__title{
+                text-align: center;
+        }
+        &__span{
+                font-family: "Futura";
+                font-size: 0.6em;
+        }
+}
+.icons{
+        @include flexible(flex, row, nowrap, flex-start, center ); 
+
+        &__item{
+                width: var(--p2);
+                margin-right: var(--p1);
+        }
+        &__link{
+                width: 100%;
+        }
+        &__img{
+                width: 100%;
+        }
+} 
+
+
+a{
+        color: var(--font-color);
+}
+
+.btn{
+
+        border-radius: var(--b-radius);
+        padding: var(--p1) var(--p06) ;
+        width: fit-content;
+        overflow: hidden;
+        @include fillBtn;
+        cursor: pointer;
+        transition: var(--transition);
+        &__img{
+                width: var(--p1);
+                height: 100%;
+        }
+}
+.btn-up{
+        position: fixed;
+        bottom: var(--p2);
+        right: var(--p4);
+        z-index: 20;
+}

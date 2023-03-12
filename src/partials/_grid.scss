@@ -1,0 +1,41 @@
+
+.cards{
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--p2);
+    grid-auto-rows: minmax(40vh, auto);
+
+    &__card{
+        padding: var(--p2);
+        border-radius: var(--b-radius);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--card-bg);
+        background-blend-mode: soft-light;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: flex-start;
+        transition: var(--transition);
+
+    }
+    &__card:hover{
+
+            background-color: var(--card-hover);
+
+    }
+    &__info{
+        margin-bottom: var(--p1);
+    }
+    &__title{
+        margin-bottom: var(--p06);
+    }
+    .icons{
+        margin-bottom: var(--p06);
+    }
+}
+

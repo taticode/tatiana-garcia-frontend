@@ -1,0 +1,8 @@
+
+@import 'src/styles.scss';
+.projects{
+
+    .icons{
+        @include flexible ( flex, row, nowrap , flex-start , center);
+    }
+}

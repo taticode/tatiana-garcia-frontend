@@ -1,0 +1,91 @@
+
+@import 'src/styles.scss';
+
+.header{
+
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    padding-top: var(--p1);
+    padding-bottom: var(--p1);
+    @include flexible(flex, row, nowrap, space-between, center ); 
+    background-color: var(--background);
+    &__block--right{
+        @include flexible(flex, row, nowrap, space-between, center ); 
+
+    }
+
+}
+
+.main-menu{
+
+    &__ul{
+        @include flexible(flex, row, nowrap, space-between, center ); 
+    }
+    &__li{
+        padding-right: var(--p1);
+        a{
+            @include fillTipo;
+        }
+    }
+
+}
+
+
+
+.logo{
+    &__img{
+        width: var(--p2);
+        margin-right: var(--p1);
+    }
+    &__title{
+        font-size: map-get($sizes, "size-logo" );
+        @include fillTipo;
+    }
+}
+
+.extra{
+    margin-right: var(--p3);
+    &__li{
+        width: var(--p1);
+    }
+}
+
+
+.switch-theme{
+    @include flexible(flex, row, nowrap, space-between, center ); 
+    padding: 0;
+    position: relative;
+
+    &::after{
+        content: "";
+        display: block;
+        width: 50%;
+        height: 100%;
+        border-radius: var(--border-radius);
+        background-color: var(--accent-70);
+        position: absolute;
+        top: 0;
+        left: 0%;
+        transition: var(--transition);
+        box-shadow: 0px 0px 4px 4px var(--accent);
+
+        
+    }
+
+    &.active{
+        &::after{
+            left: 50%;
+        }
+    }
+    &__span{
+        display: block;
+    }
+    .icons{
+        img{
+            width: var(--p1);
+            margin: var(--p04) var(--p06);
+        }
+    }
+
+}
