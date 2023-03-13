@@ -1,18 +1,20 @@
 # Tatiana García - Portfolio Frontend developer
-Este es un portfolio para mostrar diversos proyectos personales de desarrollo frontend 
 
-##Tecnologías utilizadas
-Angular v.15
-Control de versiones con Git
-Instalación de paquetes con node
-Tipado de datos con Typescript
-Hojas de estilo con Sass
-Metodología Bem
+<p>This is a portfolio to show various personal frontend development projects</p>
 
-##Instalación
-No es necesaria ninguna instalación, sólo entrar en [este enlace](https://taticode.github.io/tatiana-garcia-frontend/Home) para verlo.
+## Used technology.
 
-##Perfil de Linkedin
+- Angular v.15.
+- Version control with Git
+- Package installation width Node
+- Data typing with Typescript
+- Style sheets with Sass
+- BEM methodology
+
+## Installation
+No installation is necessary, just enter [in this link](https://taticode.github.io/tatiana-garcia-frontend/Home) para verlo.
+
+## Linkedin profile
 [Tatiana García - Frontend developer](https://www.linkedin.com/in/tatianagarciafrontend/)
 
 
