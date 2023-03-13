@@ -12,7 +12,7 @@
 - BEM methodology
 
 ## Installation
-No installation is necessary, just enter [in this link](https://taticode.github.io/tatiana-garcia-frontend/Home) para verlo.
+No installation is necessary, just enter [in this link](https://taticode.github.io/tatiana-garcia-frontend/Home)
 
 ## Linkedin profile
 [Tatiana García - Frontend developer](https://www.linkedin.com/in/tatianagarciafrontend/)
