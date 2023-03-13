@@ -1,4 +1,4 @@
-# Tatiana García - Portfolio Frontend developer
+# Tatiana García - Frontend developer portfolio
 
 <p>This is a portfolio to show various personal frontend development projects</p>
 
