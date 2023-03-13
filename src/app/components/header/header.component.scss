@@ -1,15 +1,25 @@
 
 @import 'src/styles.scss';
+:host{
+position: fixed;
+z-index: 50;
+background-color: var(--background);
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: flex-start;
+
+}
 
 .header{
-
-    position: fixed;
-    z-index: 50;
+    max-width: var(--max-width-desktop);
     width: 100%;
     padding-top: var(--p1);
     padding-bottom: var(--p1);
     @include flexible(flex, row, nowrap, space-between, center ); 
-    background-color: var(--background);
+
     &__block--right{
         @include flexible(flex, row, nowrap, space-between, center ); 
 

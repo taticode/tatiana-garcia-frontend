@@ -21,6 +21,7 @@
         justify-content: center;
         align-items: flex-start;
         transition: var(--transition);
+        min-height: 35em;
 
     }
     &__card:hover{

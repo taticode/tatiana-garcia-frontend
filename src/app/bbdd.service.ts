@@ -19,7 +19,7 @@ export class BbddService {
     { id: uuidv4(),
       name: 'The Hashi',
       description: 'Proyecto de una versión de The Fork pero más “japo”, mostrando sólo restaurantes asiáticos',
-      projectImg: './assets/img/projects-cards/kiboka.png',
+      projectImg: './assets/img/projects-cards/ramen-shifu-atocha.png',
       tech:[
         {
           id: uuidv4(),
