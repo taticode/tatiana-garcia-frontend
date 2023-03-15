@@ -6,7 +6,7 @@
 
 - Angular v.15.
 - Version control with Git
-- Package installation width Node
+- Package installation with Node
 - Data typing with Typescript
 - Style sheets with Sass
 - BEM methodology
