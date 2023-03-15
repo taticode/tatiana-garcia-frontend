@@ -1,38 +1,38 @@
 
-    @mixin flexible( $display, $direction, $corte, $justify, $align){
-      display: $display;
-      flex-flow: $direction $corte;
-      justify-content: $justify;
-      align-items: $align;
-  
-    }
+@mixin flexible( $display, $direction, $corte, $justify, $align){
+  display: $display;
+  flex-flow: $direction $corte;
+  justify-content: $justify;
+  align-items: $align;
+
+}
 
 
-    @mixin fillTipo{
-      transition: all .3s cubic-bezier(0,0,.23,1);
-      text-decoration: none;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(90deg, var(--accent), var(--accent) 50%, var(--font-color) 0);
-      background-size: 200% 100%;
-      background-position: 100%;
+@mixin fillTipo{
+  transition: all .3s cubic-bezier(0,0,.23,1);
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, var(--accent), var(--accent) 50%, var(--font-color) 0);
+  background-size: 200% 100%;
+  background-position: 100%;
 
-    &:hover {
-      background-position: 0;
-      color: var(--accent);
-      cursor: pointer;
-    }
-    }
+&:hover {
+  background-position: 0;
+  color: var(--accent);
+  cursor: pointer;
+}
+}
 
-    @mixin fillBtn{
-      transition: all .2s cubic-bezier(0,0,.23,1);
-      background-image: linear-gradient(90deg, var(--accent), var(--accent) 50%, var(--accent-70) 0);
-      background-size: 200% 100%;
-      background-position: 100%;
+@mixin fillBtn{
+  transition: all .2s cubic-bezier(0,0,.23,1);
+  background-image: linear-gradient(90deg, var(--accent), var(--accent) 50%, var(--accent-70) 0);
+  background-size: 200% 100%;
+  background-position: 100%;
 
-    &:hover {
-      background-position: 0;
-      color: var(--font-color);
-      cursor: pointer;
-    }
-    }
+&:hover {
+  background-position: 0;
+  color: var(--font-color);
+  cursor: pointer;
+}
+}
