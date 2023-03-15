@@ -2,7 +2,7 @@
 <section class="big-block projects">
     <h2 class="big-block__h2">Proyectos</h2>
     <div class="cards" *ngIf="projects">
-        <a class="cards__card" href="#" *ngFor="let project of projects">
+        <article class="cards__card" href="#" *ngFor="let project of projects">
             <div class="cards__img">
                 <img [src]="project.projectImg" [alt]="project.tech.description" [title]="project.tech.description">
             </div>
@@ -22,9 +22,10 @@
 
                     </div>
                 </div>
-
+                <a href="#" class="btn cards__btn">Ver proyecto en vivo</a>
+                <a href="#" class="btn cards__btn">Case study</a>
             </div>
         
-        </a>
+        </article>
     </div>
 </section>

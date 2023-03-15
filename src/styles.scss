@@ -129,3 +129,52 @@ a{
         right: var(--p4);
         z-index: 20;
 }
+
+
+.cards{
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: var(--p2);
+        grid-auto-rows: minmax(40vh, auto);
+
+        &__card{
+
+                border-radius: var(--b-radius);
+                border: 2px solid var(--font-color);
+                overflow: hidden;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: flex-start;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+
+        }
+        &__box{
+                padding: var(--p1) 0;
+        }
+        &__img{
+
+                overflow: hidden;
+        }
+        &__info{
+                padding: var(--p2) var(--p1);
+                width: 100%;
+        }
+        &__title{
+                margin-bottom: var(--p06);
+        }
+        .icons{
+                margin-bottom: var(--p06);
+        }
+        &__btn{
+                text-align: center;
+                width: 100%;
+                margin-bottom: var(--p06);
+        }
+}

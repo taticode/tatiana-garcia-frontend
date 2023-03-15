@@ -29,7 +29,7 @@ export class BbddService {
         {
           id: uuidv4(),
           techName: 'typescript',
-          description: 'Jypescript'
+          description: 'Typescript'
         },
         {
           id: uuidv4(),
