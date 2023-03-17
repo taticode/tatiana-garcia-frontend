@@ -141,49 +141,7 @@ export class BbddService {
           description: 'Control de versiones con git'
         },
       ]
-    },
-    { id: uuidv4(),
-      name: 'Próximo proyecto',
-      description: "Aquí podrás encontrar mi próximo proyecto cuando esté terminado, mientras tanto puedes ver los demás",
-      projectImg: './assets/img/projects-cards/notebook.jpg',
-      tech:[
-        {
-          id: uuidv4(),
-          techName: 'javascript',
-          description: 'Javascript'
-        },
-        {
-          id: uuidv4(),
-          techName: 'typescript',
-          description: 'Typescript'
-        },
-        {
-          id: uuidv4(),
-          techName: 'mongo-DB',
-          description: 'Api rest con mongo DB'
-        },
-        {
-          id: uuidv4(),
-          techName: 'angular',
-          description: 'Angular '
-        },
-        { 
-          id: uuidv4(),
-          techName: 'sass',
-          description: 'Sass '
-        },
-        { 
-          id: uuidv4(),
-          techName: 'bem',
-          description: 'Nomenclatura BEM'
-        },
-        { 
-          id: uuidv4(),
-          techName: 'github',
-          description: 'Control de versiones con git'
-        },
-      ]
-    },
+    }
   ]
 
 

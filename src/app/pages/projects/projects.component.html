@@ -1,5 +1,5 @@
 
-<section class="big-block projects">
+<section id="projects" class="big-block projects">
     <h2 class="big-block__h2">Proyectos</h2>
     <div class="cards" *ngIf="projects">
         <article class="cards__card" href="#" *ngFor="let project of projects">
@@ -22,8 +22,12 @@
 
                     </div>
                 </div>
-                <a href="#" class="btn cards__btn">Ver proyecto en vivo</a>
-                <a href="#" class="btn cards__btn">Case study</a>
+                <div class="cards__box">
+                    <a href="#" class="btn cards__btn">Proyecto en vivo</a>
+                    <a href="#" class="btn cards__btn">Repositorio en github</a>
+                    <a href="#" class="btn cards__btn">Case study</a>
+                </div>
+
             </div>
         
         </article>

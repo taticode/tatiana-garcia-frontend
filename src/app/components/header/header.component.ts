@@ -23,6 +23,7 @@ export class HeaderComponent implements OnInit {
   ){
 
   }
+
   btnSwitch (): void{
     document.querySelector('.switch-theme')?.classList.toggle('active')
   }

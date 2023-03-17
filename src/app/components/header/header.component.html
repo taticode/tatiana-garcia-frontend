@@ -23,25 +23,26 @@
         </ul>
         <nav class="main-menu">
             <ul class="main-menu__ul">
+
                 <li class="main-menu__li">
-                    <a  [routerLink]=" ['/home']"
-                        >Home</a>
+                    <a [routerLink]=" ['/']" fragment="home"> Home</a>
                 </li>
                 <li class="main-menu__li">
-                    <a  [routerLink]=" ['/projects']">Proyectos</a>
+                    <a [routerLink]=" ['/']" fragment="projects">Proyectos</a>
                 </li>
                 <li class="main-menu__li">
-                    <a  [routerLink]=" ['/about']">Sobre mí</a>
+                    <a [routerLink]=" ['/']" fragment="about">Sobre mí</a>
                 </li>
                 <li class="main-menu__li">
-                    <a  [routerLink]=" ['/education']">Formación</a>
+                    <a [routerLink]=" ['/']" fragment="education">Formación</a>
                 </li>
                 <li class="main-menu__li">
-                    <a  [routerLink]=" ['/experience']">Experiencia</a>
+                    <a [routerLink]=" ['/']" fragment="experience">Experiencia</a>
                 </li>
                 <li class="main-menu__li">
-                    <a  [routerLink]=" ['/contact']">Contacto</a>
+                    <a [routerLink]=" ['/']" fragment="contact">Contacto</a>
                 </li>
+
                 <li class="extra__li icons__item">
                     <a href="#" >
                         <img *ngIf="activePath" [src]="activePath + 'sun.svg'"  alt="linkedin de Tatiana García, frontend developer" class="icons__img">

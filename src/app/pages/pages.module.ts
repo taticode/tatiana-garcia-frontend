@@ -11,7 +11,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ComponentsModule } from "../components/components.module";
 
-
 @NgModule({
     declarations: [
         AboutComponent,

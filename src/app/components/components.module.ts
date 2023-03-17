@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { ComponentsRoutingModule } from './components-routing.module';
 import { AcordeonComponent } from './acordeon/acordeon.component';
 import { CardComponent } from './card/card.component';
-import { FarewellComponent } from './farewell/farewell.component';
 import { HeaderComponent } from './header/header.component';
 
 
@@ -12,7 +11,6 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     AcordeonComponent,
     CardComponent,
-    FarewellComponent,
     HeaderComponent
   ],
   imports: [
@@ -22,7 +20,6 @@ import { HeaderComponent } from './header/header.component';
   exports: [
     AcordeonComponent,
     CardComponent,
-    FarewellComponent,
     HeaderComponent
   ]
 })

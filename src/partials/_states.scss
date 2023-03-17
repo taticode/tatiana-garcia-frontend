@@ -1,5 +1,10 @@
 
 
-  .active{
+  .btn--active{
     color: red;
+  }
+
+  .btn--disabled{
+    background-color: #bbbcbe;
+    color:  #82858d;
   }

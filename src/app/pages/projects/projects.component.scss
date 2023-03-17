@@ -19,4 +19,51 @@
             }
         }
     }
+
+    .cards{
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: var(--p3);
+        grid-auto-rows: minmax(40vh, auto);
+
+        &__card{
+
+                overflow: hidden;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: space-between;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+
+        }
+
+        &__img{
+                border-radius: var(--b-radius);
+                overflow: hidden;
+        }
+        &__info{
+
+                padding-top: var(--p2);
+                height: 100%;
+                width: 100%;
+                @include flexible ( flex, column, nowrap , space-between, strech );
+        }
+        &__title{
+                margin-bottom: var(--p06);
+        }
+        .icons{
+                margin-bottom: var(--p06);
+        }
+        &__btn{
+                text-align: center;
+                width: 100%;
+                margin-bottom: var(--p06);
+        }
+    }
 }
