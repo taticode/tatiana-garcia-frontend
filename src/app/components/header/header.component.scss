@@ -14,7 +14,7 @@ align-items: flex-start;
 }
 
 .header{
-    max-width: var(--max-width-desktop);
+
     width: 100%;
     padding-top: var(--p1);
     padding-bottom: var(--p1);
@@ -29,6 +29,11 @@ align-items: flex-start;
 
 .main-menu{
 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
     &__ul{
         @include flexible(flex, row, nowrap, space-between, center ); 
     }
@@ -88,9 +93,7 @@ align-items: flex-start;
             left: 50%;
         }
     }
-    &__span{
-        display: block;
-    }
+
     .icons{
         img{
             width: var(--p1);
@@ -99,3 +102,21 @@ align-items: flex-start;
     }
 
 }
+.icons__item{
+    :hover{
+        .filled_dark{
+            fill: var(--accent-70);
+        }
+    }
+}
+
+.filled_dark{
+    fill: var(--font-color);
+    transition: var(--transition);
+    transform-origin: center left;
+    
+    :hover{
+        cursor: pointer;
+    }
+}
+

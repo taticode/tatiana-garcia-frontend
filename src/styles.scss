@@ -1,6 +1,5 @@
 
 @import '_colors';
-@import '_grid';
 @import '_variables';
 @import '_reset';
 @import '_mixins';
@@ -36,9 +35,10 @@ body{
 
 }
 
-h1{
+h1, .hero__title{
         font-family: 'Impact';
         font-size: map-get($sizes , "size-h1" );
+
 }
 
 h2{
@@ -55,6 +55,13 @@ h4{
         font-family     : 'Futura';
         font-size       : map-get($sizes , "size-h4" );
 }
+p{
+        padding-bottom: var(--p1);
+}
+
+body{
+        user-select: none;
+}
 
 button{
         outline: none;
@@ -65,14 +72,14 @@ button{
 
 }
 .main{
-        max-width: var(--max-width-desktop);
+
         margin: 0 auto;
 }
 
 .big-block{
 
-        padding-bottom: var(--p4);
-
+        padding: var(--p4) 0;
+        margin-top: var(--p4);
         &__h2{
                 margin-bottom: var(--p1);
         }
@@ -85,6 +92,7 @@ button{
                 text-align: center;
         }
         &__span{
+                display: block;
                 font-family: "Futura";
                 font-size: 0.6em;
         }
@@ -115,6 +123,7 @@ a{
         padding: var(--p1) var(--p06) ;
         width: fit-content;
         overflow: hidden;
+        color: var(--btn-font-color);
         @include fillBtn;
         cursor: pointer;
         transition: var(--transition);

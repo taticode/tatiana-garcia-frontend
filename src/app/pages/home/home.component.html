@@ -1,13 +1,13 @@
 
 <app-header></app-header>
-<main class="main">
 
 
-    <section id="home" class="big-block hero">
+
+    <section id="home" class="hero">
         <h1 class="hero__title">¡Hola! soy Tatiana García <br> <span class="hero__span">Frontend developer y diseñadora UX-UI</span></h1>
     
         <section class="block-down">
-            <a class="btn btn-down" href="#">
+            <a [routerLink]=" ['/']" fragment="projects" class="btn btn-down">
                 <img src="./assets/icons/dark-icons/down.svg" alt="" class="btn__img">
             </a>
         </section>
@@ -15,7 +15,7 @@
     </section>
         
 
-
+    <main class="main">
 
     <app-projects></app-projects>
     <app-about></app-about>
