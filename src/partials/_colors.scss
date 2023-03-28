@@ -1,35 +1,41 @@
 
 /* =========================COLORS============================= */
 :root{
-    .dark{
 
-
-            --background: #1B274B;
-            --accent: #f09e68;
-            --accent-70: #f0ad80;
-            --btn-background: #f0ad80;
-            --btn-background-hover: #f09e68;
-            --success: #A2B10F;
-            --warning: #FCB636;
-            --error: #FF6E83;
-            --font-color: #F0ECDE;
-            --font-color-h2: #1C274B; 
-            --btn-font-color: #1C274B;
-
-        
-    }
-
-    --background: #F0ECDE;
+    --background: #DEDEDD;
     --accent: #f09e68;
-    --accent-70: #f0ad80;
-    --btn-background: #f0ad80;
-    --btn-background-hover: #f09e68;
+    --accent-dark: #eb8541;
+    --btn-background: #f09e68;
+    --btn-background-hover: #eb8541;
     --success: #A2B10F;
     --warning: #FCB636;
     --error: #FF6E83;
     --font-color: #1B274B;
     --font-color-h2: #49526f; 
     --btn-font-color: #1C274B;
+    --neo-light: #faf8f0;
+    --neo-shadow: #bcb8ac;
+
+    .dark{
+
+
+        --background: #1B274B;
+        --accent: #f09e68;
+        --accent-dark: #eb8541;
+        --btn-background: #f09e68;
+        --btn-background-hover: #eb8541;
+        --success: #A2B10F;
+        --warning: #FCB636;
+        --error: #FF6E83;
+        --font-color: #F0ECDE;
+        --font-color-h2: #1C274B; 
+        --btn-font-color: #1C274B;
+        --neo-light: #253562;
+        --neo-shadow: #0c1224;
+        
+    }
+
+
 
     
 }

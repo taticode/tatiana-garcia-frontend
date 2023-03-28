@@ -50,14 +50,13 @@ h2{
 h3{
         font-family     : 'Futura';
         font-size       : map-get($sizes , "size-h3" );
+        font-weight: bold;
 }
 h4{
         font-family     : 'Futura';
         font-size       : map-get($sizes , "size-h4" );
 }
-p{
-        padding-bottom: var(--p1);
-}
+
 
 body{
         user-select: none;
@@ -118,9 +117,9 @@ a{
 }
 
 .btn{
-
+        text-align: center;
         border-radius: var(--b-radius);
-        padding: var(--p1) var(--p06) ;
+        padding: var(--p1) var(--p1) ;
         width: fit-content;
         overflow: hidden;
         color: var(--btn-font-color);
@@ -131,7 +130,11 @@ a{
                 width: var(--p1);
                 height: 100%;
         }
+        &.active {
+                background: var(--accent);
+                }
 }
+
 .btn-up{
         position: fixed;
         bottom: var(--p2);

@@ -17,23 +17,34 @@
 
 @mixin fillTipo{
   transition: all .3s cubic-bezier(0,0,.23,1);
-  text-decoration: none;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(90deg, var(--accent-70), var(--accent-70) 50%, var(--font-color) 0);
+  background-image: linear-gradient(90deg, var(--accent-dark), var(--accent-dark) 50%, var(--font-color) 0);
   background-size: 200% 100%;
   background-position: 100%;
 
-&:hover {
-  background-position: 0;
-  color: var(--accent-70);
-  cursor: pointer;
+  &::after{
+    transition: var(--transition);
+    content: '';
+    display: block;
+    width: 0%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent);
 }
+  &:hover {
+    background-position: 0;
+    color: var(--accent-dark);
+    cursor: pointer;
+      &::after{
+        width: 100%;
+    }
+  }
 }
 
 @mixin fillBtn{
   transition: all .2s cubic-bezier(0,0,.23,1);
-  background-image: linear-gradient(90deg, var(--accent), var(--accent) 50%, var(--accent-70) 0);
+  background-image: linear-gradient(90deg, var(--accent-dark), var(--accent-dark) 50%, var(--accent) 0);
   background-size: 200% 100%;
   background-position: 100%;
 
@@ -42,6 +53,13 @@
     color: var(--btn-font-color);
     cursor: pointer;
   }
+}
+
+@mixin neomorphism {
+  border-radius: var(--b-radius);
+  background: var(--background);
+  box-shadow:  5px 5px 10px var(--neo-shadow),
+              -5px -5px 10px var(--neo-light);
 }
 
 

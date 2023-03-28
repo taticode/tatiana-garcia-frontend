@@ -1,0 +1,38 @@
+<section class="tabs">
+
+    <ul class="tabs__menu">
+        <li class="tabs__menu__item btn" *ngFor="let tab of dataTabs; let i = index" [ngClass]="{'active': seleccionado === i }" (click)="setSeleccionado(i)">
+            {{tab.textItem}}
+        </li>
+    </ul>
+
+    
+    <article class="tabs__info" *ngFor="let tab of dataTabs; let i = index" [ngClass]="{'active': seleccionado === i}">
+        <h3 class="tabs__title"> {{tab.textItem}}</h3> 
+        <section class="tabs__content">
+            <div class="tabs__img">
+                <img [src]="tab.thumbnail" [alt]="tab.tumbnailAlt">
+            </div>
+            <div class="tabs__datos">
+                <div>
+                    <p>Escuela: {{tab.escuela}}</p>
+                    <p>Duración: {{tab.horas}}</p>
+                    <p>Fecha de fin: {{tab.finalizado}}</p>
+                    <a *ngIf="tab.link" href="{{tab.link}}" target="_blank" rel="noopener noreferrer">Enlace al curso</a>
+
+                </div>
+
+                <div class="tabs__skills" *ngIf="tab.skill">
+                    <div class="tabs__img-wrap" *ngFor="let skill of tab.skill">
+                        <img [src]="skill.img" [alt]="skill.alt" [title]="skill.alt">
+                    </div>
+
+                </div>
+    
+            </div>
+
+        </section>
+        <h4 class="tabs__title">Conocimientos adquiridos</h4>
+        <p>{{tab.knowledge}}</p>
+    </article>
+</section>
