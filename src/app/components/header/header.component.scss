@@ -60,12 +60,10 @@ align-items: flex-start;
     }
 }
 
-.extra{
-    margin-right: var(--p3);
-    &__li{
-        width: var(--p3);
+.extra__li{
+    margin-right: var(--p1);
+    width: var(--p1);
 
-    }
 
 }
 

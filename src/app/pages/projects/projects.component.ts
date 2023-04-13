@@ -10,8 +10,6 @@ import { BbddService } from 'src/app/bbdd.service';
 })
 export class ProjectsComponent implements OnInit {
 
-  public lightRoute: string = ''
-  public darkRoute: string = ''
   public activePath: string = './assets/icons/dark-icons/'
   public projects: any 
 
@@ -25,8 +23,7 @@ export class ProjectsComponent implements OnInit {
   
 
   ngOnInit(): void {
-    this.lightRoute = this.bbddService.lightRoute
-    this.darkRoute = this.bbddService.darkRoute
+
     this.projects = this.bbddService.projects;
 
     this.bbddService.disparadorRuta.subscribe( data => {

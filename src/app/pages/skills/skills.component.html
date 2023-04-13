@@ -1,14 +1,19 @@
-<div class="big-block skills">
-    <h2 class="big-block__h2">Skills</h2>
-    <h3>Hard Skills</h3>
-    <div class="icons">
-        <img src="./assets/icons/dark-icons/javascript.svg" alt="tecnología utilizada: javascript" class="icons__item">
-        <img src="./assets/icons/dark-icons/angular.svg" alt="tecnología utilizada: angular" class="icons__item">
-        <img src="./assets/icons/dark-icons/sass.svg" alt="tecnología utilizada: sass" class="icons__item">
-    </div>
+<section class="big-block skills">
+    <h2 class="big-block__h2">Hard skills</h2>
+    <picture class="skills__picture" >
+        <div class="icons" *ngFor="let skill of hardSkills">
+            <img class="icons__item" [src]=" activePath + skill.img+ '.svg'" [alt]="skill.name" [title]="skill.name">
+            <p>{{skill.name }}</p>
+        </div>
+    </picture>
+    <h2 class="big-block__h2">Soft skills</h2>
+    <picture class="skills__picture" >
+
+        <div class="icons" *ngFor="let skill of softSkills">
+            <img class="icons__item" [src]=" activePath + skill.img+ '.svg'" [alt]="skill.name" [title]="skill.name">
+            <p>{{skill.name }}</p>
+        </div>
+    </picture>
+
     
-    <h3>Soft Skills</h3>
-    <p>Creatividad</p>
-    <p>Perfeccionismo</p>
-    <p>Autodidacta</p>
-</div>
+</section>

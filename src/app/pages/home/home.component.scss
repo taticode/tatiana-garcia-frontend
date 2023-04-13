@@ -35,10 +35,13 @@
 }
 
 .hero{
-  background-image: url('../../../assets/background/desktop-illustration-light.svg');
+  position: relative;
+  background-image: url('../../../assets/background/desktop.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center bottom;
+  background-color:var(--background-hero);
+  background-blend-mode: color;
   &__title{
     color: var(--font-color);
 

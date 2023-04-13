@@ -49,7 +49,7 @@ export class BbddService {
         { 
           id: uuidv4(),
           techName: 'bem',
-          description: 'Nomenclatura BEM'
+          description: 'BEM'
         },
         { 
           id: uuidv4(),
@@ -91,7 +91,7 @@ export class BbddService {
         { 
           id: uuidv4(),
           techName: 'bem',
-          description: 'Nomenclatura BEM'
+          description: 'BEM'
         },
         { 
           id: uuidv4(),
@@ -133,7 +133,7 @@ export class BbddService {
         { 
           id: uuidv4(),
           techName: 'bem',
-          description: 'Nomenclatura BEM'
+          description: 'BEM'
         },
         { 
           id: uuidv4(),
@@ -153,41 +153,41 @@ export class BbddService {
       skill:[
         {
           id: uuidv4(),
-          img: './assets/logos/angular.svg',
-          alt: 'Node js'
-        },
-        {
-          id: uuidv4(),
-          img: './assets/logos/react.svg',
-          alt: 'React'
-        },
-        {
-          id: uuidv4(),
-          img: './assets/logos/nodejs.svg',
+          img: 'angular',
           alt: 'Angular'
         },
         {
           id: uuidv4(),
-          img: './assets/logos/mongodb.svg',
+          img: 'react',
+          alt: 'React'
+        },
+        {
+          id: uuidv4(),
+          img: 'node-js',
+          alt: 'Node js'
+        },
+        {
+          id: uuidv4(),
+          img: 'mongo-DB',
           alt: 'Mongo db'
         },
         {
           id: uuidv4(),
-          img: './assets/logos/typescript.svg',
+          img: 'typescript',
           alt: 'Typescript'
         },
         {
           id: uuidv4(),
-          img: './assets/logos/sass.svg',
+          img: 'sass',
           alt: 'Sass'
         },
         {
           id: uuidv4(),
-          img: './assets/logos/bem.svg',
-          alt: 'Nomenclatura BEM'
+          img: 'bem',
+          alt: ' BEM'
         },
       ],
-      knowledge: 'En este curso profundicé más en la creación de aplicaciones con Angular, empecé a conocer React y cree mis propias bases de datos con Mongo DB, todo esto trabajando con node js para la instalación de paquetes.',
+      knowledge: 'En este curso profundicé más en la creación de aplicaciones con Angular 15, empecé a conocer React y cree mis propias bases de datos con Mongo DB, todo esto trabajando con node js para la instalación de paquetes.',
       finalizado: 'Diciembre de 2022.',
       link: 'https://trazos.net/online/formacion-online/desarrollo-web/curso-online-de-frameworks-con-reactjs-angular-nodejs-y-mongodb/',
       thumbnail: './assets/img/education/trazos.png',
@@ -200,21 +200,21 @@ export class BbddService {
       skill:[
         {
           id: uuidv4(),
-          img: './assets/logos/miro.svg',
+          img: 'miro',
           alt: 'MIro'
         },
         {
           id: uuidv4(),
-          img: './assets/logos/figma.svg',
+          img: 'figma',
           alt: 'Figma'
         },
         {
           id: uuidv4(),
-          img: './assets/logos/google-forms.svg',
+          img: 'google-forms',
           alt: 'Google forms'
         },
       ],
-      knowledge: '',
+      knowledge: 'En este curso aprendí a buscar soluciones a problemas en productos digitales, a averiguar las necesitades del usuario utilizando herramientas de investigación y a crear diseños que solucionaran esos problemas desde un prototipo sencillo en baja fidelidad, hasta el diseño final.',
       finalizado: 'Febrero de 2021.',
       link: 'https://trazos.net/online/formacion-online/productos-digitales/bootcamp-online-de-ux-ui/',
       thumbnail: './assets/img/education/bootcamp-ux-ui-trazos.jpg',
@@ -227,11 +227,12 @@ export class BbddService {
       skill:[
         {
           id: uuidv4(),
-          img: './assets/logos/javascript.svg'
+          img: 'javascript',
+          alt: 'Javascript'
         },
 
       ],
-      knowledge: '',
+      knowledge: 'Curso especializado en Javascript, en una modalidad con muchos ejercicios prácticos y completa. Cuyo contenido abarca todo javascript, desde los tipos de datos hasta eventos de ratón, creación de objetos o consultar APIS',
       finalizado: 'Noviembre de 2020.',
       link: 'https://asociacionaepi.es/curso-de-javascript-ajax-json-jquery/',
       thumbnail: './assets/img/education/javascript-profesional.png',
@@ -244,14 +245,16 @@ export class BbddService {
       skill:[
         {
           id: uuidv4(),
-          img: './assets/logos/nodejs.svg'
+          img: 'node-js',
+          alt: 'Node js'
         },
         {
           id: uuidv4(),
-          img: './assets/logos/angular.svg'
+          img: 'angular',
+          alt: 'Angular'
         }
       ],
-      knowledge: '',
+      knowledge: 'Curso especializado en Angular, en su versión 7. Aprendí las características principales de este framework de javascript, componentes, servicios, directivas, pipes, etc.',
       finalizado: 'Diciembre de 2018.',
       link: '',
       thumbnail: './assets/img/education/angular.png',
@@ -264,18 +267,21 @@ export class BbddService {
       skill:[
         {
           id: uuidv4(),
-          img: './assets/logos/html.svg'
+          img: 'html5',
+          alt: 'Html 5'
         },
         {
           id: uuidv4(),
-          img: './assets/logos/css.svg'
+          img: 'css3',
+          alt: 'CSS 3'
         },
         {
           id: uuidv4(),
-          img: './assets/logos/jquery.svg'
+          img: 'jquery',
+          alt: 'J-query'
         }
       ],
-      knowledge: '',
+      knowledge: 'Curso de diseño y maquetación muy completo con muchos ejercicios prácticos donde adquirí una buena base de html y css y creaba funcionalidades o hacía animaciones más complejas con jquery',
       finalizado: 'Junio de 2018.',
       link: '',
       thumbnail: './assets/img/education/html-css.png',
@@ -288,16 +294,77 @@ export class BbddService {
       skill:[
         {
           id: uuidv4(),
-          img: './assets/logos/wordpress.svg'
+          img: 'wordpress',
+          alt: 'Wordpress'
         }
       ],
-      knowledge: '',
+      knowledge: 'Curso del gestor de contenidos Wordpress, creación de temas hijo y de plantillas usando el tema DIVI',
       finalizado: 'Mayo de 2016.',
       link: 'https://www.cursoswordpressmadrid.com/curso-wordpress-profesional-en-madrid/',
       thumbnail: './assets/img/education/wordpress.png',
       thumbnailAlt: 'holi' },
   
   ]
+
+
+  public hardSkills: any[] = [
+      { id: uuidv4(),
+        name: 'Angular',
+        img: 'angular',
+      },
+      { id: uuidv4(),
+        name: 'Javascript',
+        img: 'javascript',
+      },
+      { id: uuidv4(),
+        name: 'Typescript',
+        img: 'typescript',
+      },
+      { id: uuidv4(),
+        name: 'Mongo DB',
+        img: 'mongo-DB',
+      },
+      { id: uuidv4(),
+        name: 'Node js',
+        img: 'node-js',
+      },
+      { id: uuidv4(),
+        name: 'Html',
+        img: 'html5',
+      },
+      { id: uuidv4(),
+        name: 'CSS',
+        img: 'css3',
+      },
+      { id: uuidv4(),
+        name: 'Sass',
+        img: 'sass',
+      },
+      { id: uuidv4(),
+        name: 'BEM',
+        img: 'bem',
+      },
+      { id: uuidv4(),
+        name: 'Github',
+        img: 'github',
+      },
+    ]
+  
+public softSkills: any[] = [
+
+      { id: uuidv4(),
+        name: 'Creatividad',
+        img: 'creatividad',
+      },
+      { id: uuidv4(),
+        name: 'Autodidacta',
+        img: 'autodidacta',
+      },
+      { id: uuidv4(),
+        name: 'Perseverancia',
+        img: 'perseverancia',
+      },
+    ]
 
 
   constructor() {

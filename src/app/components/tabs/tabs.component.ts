@@ -10,7 +10,7 @@ import { BbddService } from 'src/app/bbdd.service';
 
 export class TabsComponent implements OnInit {
 
-
+  public activePath: string = './assets/icons/dark-icons/'
   constructor(
     public bbddService : BbddService
   ) { }
@@ -22,7 +22,12 @@ export class TabsComponent implements OnInit {
   setSeleccionado(posicion: number) {
     this.seleccionado = posicion
   }
+
   ngOnInit(): void {
+  
+    this.bbddService.disparadorRuta.subscribe( data => {
+      this.activePath = data
+    })
   }
 
 }

@@ -58,6 +58,7 @@ h4{
 }
 
 
+
 body{
         user-select: none;
 }
@@ -66,7 +67,7 @@ button{
         outline: none;
 }
 
-.header, .main{
+.header{
         padding: 0 var(--p4);
 
 }
@@ -77,7 +78,7 @@ button{
 
 .big-block{
 
-        padding: var(--p4) 0;
+        padding: var(--p4) var(--p4);
         margin-top: var(--p4);
         &__h2{
                 margin-bottom: var(--p1);
@@ -117,25 +118,30 @@ a{
 }
 
 .btn{
+        position: relative;
         text-align: center;
         border-radius: var(--b-radius);
         padding: var(--p1) var(--p1) ;
         width: fit-content;
         overflow: hidden;
-        color: var(--btn-font-color);
+        color: var(--background);
         @include fillBtn;
+
         cursor: pointer;
         transition: var(--transition);
+
         &__img{
                 width: var(--p1);
                 height: 100%;
         }
         &.active {
-                background: var(--accent);
+                background: var(--accent-dark);
                 }
 }
 
-.btn-up{
+.btn-up, .btn-down{
+        width: var(--p2);
+        padding: var(--p06);
         position: fixed;
         bottom: var(--p2);
         right: var(--p4);

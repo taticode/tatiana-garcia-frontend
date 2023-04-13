@@ -12,12 +12,12 @@
         @include flexible ( flex, row, nowrap , flex-start , center);
         width: 100%;
         height: 100%;
-        padding: var(--p06);
+        padding: var(--p06) 0;
         border-bottom: 1px solid var(--font-color);
 
         img{
         width: var(--p1);
-        margin-right: var(--p06);
+        margin-right: var(--p1);
         }
 }
 }
@@ -25,7 +25,7 @@
 .cards{
 
         width: 100%;
-        @include grid ( grid, repeat(3, 1fr), var(--p3), minmax(40vh, auto));
+        @include grid ( grid, repeat(3, 1fr), 1fr,var(--p3), minmax(40vh, auto));
 
         &__card{
 

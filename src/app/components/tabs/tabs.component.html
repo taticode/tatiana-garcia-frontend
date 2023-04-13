@@ -8,31 +8,37 @@
 
     
     <article class="tabs__info" *ngFor="let tab of dataTabs; let i = index" [ngClass]="{'active': seleccionado === i}">
-        <h3 class="tabs__title"> {{tab.textItem}}</h3> 
+
         <section class="tabs__content">
-            <div class="tabs__img">
-                <img [src]="tab.thumbnail" [alt]="tab.tumbnailAlt">
+
+
+            <div class="tabs__picture">
+                <img class="tabs__picture--img" [src]="tab.thumbnail" [alt]="tab.tumbnailAlt">
+                <div class="tabs__picture--skills" *ngIf="tab.skill">
+                    <picture class="tabs__picture--item" *ngFor="let skill of tab.skill" >
+                        <img  [src]=" activePath + skill.img+ '.svg'" [alt]="skill.alt" [title]="skill.alt">
+                        <p>{{skill.alt}}</p>
+                    </picture>
+                </div>
+
             </div>
             <div class="tabs__datos">
-                <div>
-                    <p>Escuela: {{tab.escuela}}</p>
-                    <p>Duración: {{tab.horas}}</p>
-                    <p>Fecha de fin: {{tab.finalizado}}</p>
-                    <a *ngIf="tab.link" href="{{tab.link}}" target="_blank" rel="noopener noreferrer">Enlace al curso</a>
+                <h4 class="tabs__title">Información</h4>
+                <p>Escuela: {{tab.escuela}}</p>
+                <p>Duración: {{tab.horas}}</p>
+                <p>Fecha de fin: {{tab.finalizado}}</p>
 
+
+                <div class="tabs__description">
+                    <h4 class="tabs__title">Descripción</h4>
+                    <p>{{tab.knowledge}}</p>
                 </div>
+                <a *ngIf="tab.link" href="{{tab.link}}" target="_blank" rel="noopener noreferrer">Ir al curso</a>
 
-                <div class="tabs__skills" *ngIf="tab.skill">
-                    <div class="tabs__img-wrap" *ngFor="let skill of tab.skill">
-                        <img [src]="skill.img" [alt]="skill.alt" [title]="skill.alt">
-                    </div>
 
-                </div>
-    
             </div>
 
         </section>
-        <h4 class="tabs__title">Conocimientos adquiridos</h4>
-        <p>{{tab.knowledge}}</p>
+
     </article>
 </section>

@@ -8,9 +8,10 @@
 }
 
 
-@mixin grid( $display-grid, $template-columns, $grid-gap, $grid-auto-rows ){
+@mixin grid( $display-grid, $template-columns, $template-rows, $grid-gap, $grid-auto-rows ){
   display: $display-grid;
   grid-template-columns: $template-columns;
+  grid-template-rows: $template-rows;
   grid-gap: $grid-gap;
   grid-auto-rows: $grid-auto-rows;
 }
@@ -50,7 +51,7 @@
 
   &:hover {
     background-position: 0;
-    color: var(--btn-font-color);
+    color: var(--background);
     cursor: pointer;
   }
 }
@@ -58,8 +59,7 @@
 @mixin neomorphism {
   border-radius: var(--b-radius);
   background: var(--background);
-  box-shadow:  5px 5px 10px var(--neo-shadow),
-              -5px -5px 10px var(--neo-light);
+
 }
 
 

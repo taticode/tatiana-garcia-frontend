@@ -1,6 +1,32 @@
 
+@import 'src/styles.scss';
+
+:host{
+    display: block;
+    background-color: var(--background-section);
+}
+
 .skills{
     max-width: var(--max-width-desktop);
     margin-left: auto;
     margin-right: auto;
+
+    &__picture{
+        @include grid ( grid, repeat(5, 1fr), 1fr, var(--p1), minmax(1vh, auto)); 
+        }
+    &__picture:not(:last-child){
+        margin-bottom: var(--p4);
+    }
+    .icons{
+        @include flexible(flex, column, nowrap, center, center );   
+        padding: var(--p1);
+        text-align: center;
+        background-color: var(--background);
+        border-radius: var(--b-radius);
+        &__item{
+            margin-right: 0;
+            margin-bottom: var(--p06);
+        }
+    }
+
 }
