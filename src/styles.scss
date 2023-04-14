@@ -124,7 +124,7 @@ a{
         padding: var(--p1) var(--p1) ;
         width: fit-content;
         overflow: hidden;
-        color: var(--background);
+        color: var(--btn-font-color);
         @include fillBtn;
 
         cursor: pointer;

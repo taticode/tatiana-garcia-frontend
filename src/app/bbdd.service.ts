@@ -367,6 +367,42 @@ public softSkills: any[] = [
     ]
 
 
+
+public experience: any[] = [
+  { id: uuidv4(),
+    rol: 'Diseño UX-UI y desarrollo frontend con Angular 12',
+    company: 'Anjana Data SL',
+    period: '2021 - 2022'
+  },
+  { id: uuidv4(),
+    rol: 'Maquetación y desarrollo frontend con Angular Js',
+    company: 'NTT Data',
+    period: '2020 - 2021'
+  },
+  { id: uuidv4(),
+    rol: 'Maquetación y desarrollo frontend con Angular 7',
+    company: 'Zeeker solutions',
+    period: '2019'
+  },
+  { id: uuidv4(),
+    rol: 'Diseño UX-UI y desarrollo frontend con Angular Js',
+    company: 'Zeeker solutions',
+    period: '2019'
+  },
+  { id: uuidv4(),
+    rol: 'Diseño y maquetación con temas hijo de Moodle',
+    company: 'Inserver E-learning',
+    period: '2019'
+  },
+  { id: uuidv4(),
+    rol: 'Maquetación con Wordpress',
+    company: 'Sapos y Princesas',
+    period: '2017'
+  },
+
+]
+
+
   constructor() {
     
 

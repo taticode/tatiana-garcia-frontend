@@ -11,7 +11,7 @@ import { BbddService } from 'src/app/bbdd.service';
 export class ProjectsComponent implements OnInit {
 
   public activePath: string = './assets/icons/dark-icons/'
-  public projects: any 
+  public projects: any [] = []
 
 
 

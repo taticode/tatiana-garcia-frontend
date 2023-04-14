@@ -12,7 +12,9 @@
   @include flexible(flex, row, nowrap, center, center ); 
 }
 .btn-down{
-  position: relative;
+  position: absolute;
+  left: 0;
+  margin-left: 50%;
   align-self: flex-end;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -41,9 +43,9 @@
   background-size: cover;
   background-position: center bottom;
   background-color:var(--background-hero);
-  background-blend-mode: color;
+  background-blend-mode: multiply;
   &__title{
-    color: var(--font-color);
+    color: var(--font-hero);
 
   }
 
