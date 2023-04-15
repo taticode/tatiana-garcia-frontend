@@ -14,12 +14,15 @@ const routes: Routes = [
   { path: 'education', component: EducationComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: 'notFound', pathMatch: 'full' },
 
 ];
 
 @NgModule({
-
+  imports: [
+    RouterModule.forRoot(routes, { useHash: true }),
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

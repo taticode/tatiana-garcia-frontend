@@ -14,6 +14,16 @@ export class HeaderComponent implements OnInit {
   public activePath: string = './assets/icons/dark-icons/'
   public themeBody : any  
 
+
+  rootRoute = '/';
+  links = [
+      { title: 'Home', fragment: 'hero' },
+      { title: 'Proyectos', fragment: 'projects' },
+      { title: 'Sobre mí', fragment: 'about' },
+      { title: 'Formación', fragment: 'education' },
+      { title: 'Experiencia', fragment: 'experience' },
+      { title: 'Contacto', fragment: 'contact' },
+  ];
   @Output() propagar = new EventEmitter<string>()
  
 

@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ComponentsModule } from "../components/components.module";
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import { ComponentsModule } from "../components/components.module";
         ExperienceComponent,
         HomeComponent,
         ProjectsComponent,
-        SkillsComponent
+        SkillsComponent,
+        NotFoundComponent
     ],
     exports: [
         AboutComponent,
@@ -28,7 +30,8 @@ import { ComponentsModule } from "../components/components.module";
         ExperienceComponent,
         HomeComponent,
         ProjectsComponent,
-        SkillsComponent
+        SkillsComponent,
+        NotFoundComponent
     ],
     imports: [
         CommonModule,

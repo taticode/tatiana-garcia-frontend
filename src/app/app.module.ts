@@ -20,7 +20,8 @@ const routes: Routes = [
   { path: 'education', component: EducationComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: 'notFound', pathMatch: 'full' },
 
 ];
 
@@ -34,7 +35,6 @@ const routes: Routes = [
     AppRoutingModule,
     ComponentsModule,
     PagesModule,
-    AppRoutingModule,
     RouterModule.forRoot(routes, {
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled',
