@@ -18,7 +18,8 @@ export class BbddService {
   public projects: any[] = [
     { id: uuidv4(),
       name: 'The Hashi',
-      description: 'Proyecto de una versión de The Fork pero más “japo”, mostrando sólo restaurantes asiáticos',
+      link: './the-hashi',
+      description: 'Proyecto realizado en Angular, rediseñando una versión de The Fork pero más “japo”, mostrando sólo restaurantes asiáticos',
       projectImg: './assets/img/projects-cards/ramen-shifu-atocha.jpg',
       tech:[
         {
@@ -60,7 +61,8 @@ export class BbddService {
     },
     { id: uuidv4(),
       name: 'My Gallery',
-      description: "Galería de arte con las obras más conocidas del impresionismo",
+      link: '#',
+      description: "Proyecto realizado con Angular sobre una galería de arte con las obras más conocidas del impresionismo",
       projectImg: './assets/img/projects-cards/le-moulin-de-la-galette.jpg',
       tech:[
         {
@@ -102,7 +104,8 @@ export class BbddService {
     },
     { id: uuidv4(),
       name: 'Sobre este portfolio',
-      description: "Más información sobre el proceso de creación de este portfolio",
+      link: '#',
+      description: "Más información sobre el proceso de creación de este portfolio, de diseño propio, creado con Angular ",
       projectImg: './assets/img/projects-cards/portfolio-design.jpg',
       tech:[
         {
@@ -350,8 +353,11 @@ export class BbddService {
       },
     ]
   
-public softSkills: any[] = [
-
+  public softSkills: any[] = [
+      { id: uuidv4(),
+        name: 'Figma',
+        img: 'figma',
+      },
       { id: uuidv4(),
         name: 'Creatividad',
         img: 'creatividad',
@@ -368,39 +374,39 @@ public softSkills: any[] = [
 
 
 
-public experience: any[] = [
-  { id: uuidv4(),
-    rol: 'Diseño UX-UI y desarrollo frontend con Angular 12',
-    company: 'Anjana Data SL',
-    period: '2021 - 2022'
-  },
-  { id: uuidv4(),
-    rol: 'Maquetación y desarrollo frontend con Angular Js',
-    company: 'NTT Data',
-    period: '2020 - 2021'
-  },
-  { id: uuidv4(),
-    rol: 'Maquetación y desarrollo frontend con Angular 7',
-    company: 'Zeeker solutions',
-    period: '2019'
-  },
-  { id: uuidv4(),
-    rol: 'Diseño UX-UI y desarrollo frontend con Angular Js',
-    company: 'Zeeker solutions',
-    period: '2019'
-  },
-  { id: uuidv4(),
-    rol: 'Diseño y maquetación con temas hijo de Moodle',
-    company: 'Inserver E-learning',
-    period: '2019'
-  },
-  { id: uuidv4(),
-    rol: 'Maquetación con Wordpress',
-    company: 'Sapos y Princesas',
-    period: '2017'
-  },
+  public experience: any[] = [
+    { id: uuidv4(),
+      rol: 'Diseño UX-UI y desarrollo frontend con Angular 12',
+      company: 'Anjana Data SL',
+      period: '2021 - 2022',
+      task: 'Trabajé en la mejora del diseño de una aplicación de gobierno del dato haciendo un análisis UX/UI, rediseñando componentes en Figma y maquetando después las mejoras de esta aplicación desarrollada con Sass y Angular. Metodología de trabajo agile e integración de cambios con pull requests. Si trabajas aquí no se te va a olvidar lo que es una Anjana.'
+    },
+    { id: uuidv4(),
+      rol: 'Maquetación y desarrollo frontend con Angular Js',
+      company: 'NTT Data',
+      period: '2020 - 2021',
+      task: 'En este puesto desarrollé tareas de debuggin en Angular en una aplicación de gestión de ventas de una empresa de telefonía móvil. Metodología de trabajo agile y subida de cambios con pull requests. En este puesto se trabajó mucho en equipo, los compañeros fueron inmejorables 🔝'
+    },
+    { id: uuidv4(),
+      rol: 'Maquetación y desarrollo frontend con Angular 7',
+      company: 'Zeeker solutions',
+      period: '2019',
+      task: 'En este puesto mi labor fue la maquetación e integración de componentes nuevos con Angular y Sass. Aquí pude colaborar con mi compañera de diseño UX-UI en la creación de un nuevo producto de banca digital.'
+    },
+    { id: uuidv4(),
+      rol: 'Diseño y maquetación con temas hijo de Moodle',
+      company: 'Inserver E-learning',
+      period: '2019',
+      task: 'En esta empresa de gamificación realicé el diseño de temas hijo para cursos de Moodle, y la posterior maquetación con css'
+    },
+    { id: uuidv4(),
+      rol: 'Maquetación con Wordpress',
+      company: 'Sapos y Princesas',
+      period: '2017',
+      task: 'También una etapa muy chula con buenos compañeros. En esta revista digital maquetaba secciones nuevas de la revista con Wordpress y css'
+    },
 
-]
+  ]
 
 
   constructor() {

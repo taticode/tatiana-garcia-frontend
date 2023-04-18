@@ -1,7 +1,29 @@
 
 .contact{
-    max-width: var(--max-width-desktop);
+
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    background-color: var(--background);
+}
+
+.bg-blue{
+    transition: all .5s ;
+    animation: colors 4s linear normal backwards;
+}
+@keyframes colors {
+    10%{
+        background: rgb(206, 248, 171);
+    }
+    50%{
+        background: rgb(238, 251, 163);
+    }
+    80%{
+        background-color: rgba(154, 204, 253, 0.989);
+    }
+
+    100% {
+        background-color: var(--background);
+    }
 
 }

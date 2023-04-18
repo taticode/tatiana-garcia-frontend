@@ -1,7 +1,10 @@
-<section>
-  <article *ngFor="let job of experience">
-    <h3>{{job.rol}}</h3>
-    <h4>{{job.company}}</h4>
-    <p>{{job.period}}</p>
+<section class="acordeon">
+  <article class="acordeon__article" *ngFor="let job of experience">
+    <div class="acordeon__info">
+      <h3>{{job.rol}}</h3>
+      <h4>{{job.company}}</h4>
+      <p>{{job.period}}</p>
+    </div>
+    <p>{{job.task}}</p>
   </article>
 </section>

@@ -6,6 +6,7 @@ import { AcordeonComponent } from './acordeon/acordeon.component';
 import { CardComponent } from './card/card.component';
 import { HeaderComponent } from './header/header.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { ConfetiComponent } from './confeti/confeti.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { TabsComponent } from './tabs/tabs.component';
     AcordeonComponent,
     CardComponent,
     HeaderComponent,
-    TabsComponent
+    TabsComponent,
+    ConfetiComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { TabsComponent } from './tabs/tabs.component';
     AcordeonComponent,
     CardComponent,
     HeaderComponent,
-    TabsComponent
+    TabsComponent,
+    ConfetiComponent
   ]
 })
 export class ComponentsModule { }

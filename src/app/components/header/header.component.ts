@@ -25,7 +25,6 @@ export class HeaderComponent implements OnInit {
       { title: 'Contacto', fragment: 'contact' },
   ];
   @Output() propagar = new EventEmitter<string>()
- 
 
   constructor(
     private bbddService : BbddService

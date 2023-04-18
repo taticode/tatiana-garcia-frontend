@@ -25,23 +25,23 @@ $sizes: (
     --p3: 3em;
     --p4: 4em;
     --p-section: ar(--p4);
-} 
+
 
 
 /* =========================BORDER RADIUS============================= */
 
-:root{
-    --b-radius: 0.5em;
-}
+--b-radius: 0.5em;
+
 
 /* ========================== TRANSITION ============================= */
 
-:root{
-    --transition: all .2s ease-in-out;
-}
+--transition: all .2s ease-in-out;
+
+
 
 /* ========================== MAX WIDTH ============================= */
 
-:root{
     --max-width-desktop: 1440px;
+
+
 }

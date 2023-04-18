@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
+import { ConfetiComponent } from './components/confeti/confeti.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { EducationComponent } from './pages/education/education.component';
@@ -20,14 +21,13 @@ const routes: Routes = [
   { path: 'education', component: EducationComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', redirectTo: 'notFound', pathMatch: 'full' },
-
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: 'notFound', pathMatch: 'full' }
 ];
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
 
   ],
   imports: [
@@ -42,7 +42,7 @@ const routes: Routes = [
     }),
   ],
   providers: [
-
+    ConfetiComponent
   ],
   bootstrap: [AppComponent]
 })

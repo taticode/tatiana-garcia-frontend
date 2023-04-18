@@ -57,6 +57,9 @@ h4{
         font-size       : map-get($sizes , "size-h4" );
 }
 
+p{
+        padding-bottom: var(--p06);
+}
 
 
 body{

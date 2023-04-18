@@ -1,0 +1,12 @@
+
+@import 'src/styles.scss';
+
+.acordeon{
+    &__article{
+        @include grid ( grid, 1fr 2fr, 1fr, var(--p2), minmax(0vh, auto));
+    }
+    &__info{
+
+    }
+
+}

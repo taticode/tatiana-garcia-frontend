@@ -4,65 +4,100 @@
         max-width: var(--max-width-desktop);
         margin-left: auto;
         margin-right: auto;
-.icons{
-@include flexible ( flex, column, nowrap , flex-start , flex-start);
-
-&__item{
-
-        @include flexible ( flex, row, nowrap , flex-start , center);
-        width: 100%;
-        height: 100%;
-        padding: var(--p06) 0;
-        border-bottom: 1px solid var(--font-color);
-
-        img{
-        width: var(--p1);
-        margin-right: var(--p1);
-        }
-}
-}
-
-.cards{
-
-        width: 100%;
-        @include grid ( grid, repeat(3, 1fr), 1fr,var(--p3), minmax(40vh, auto));
-
-        &__card{
-
-                overflow: hidden;
-                background-repeat: no-repeat;
-                background-size: cover;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                align-content: space-between;
-                justify-content: flex-start;
-                align-items: flex-start;
-
-
-        }
-
-        &__img{
-                border-radius: var(--b-radius);
-                overflow: hidden;
-        }
-        &__info{
-
-                padding-top: var(--p2);
-                height: 100%;
-                width: 100%;
-                @include flexible ( flex, column, nowrap , space-between, strech );
-        }
-        &__title{
-                margin-bottom: var(--p06);
-        }
         .icons{
-                margin-bottom: var(--p06);
-        }
-        &__btn{
-                text-align: center;
+        @include flexible ( flex, column, nowrap , flex-start , flex-start);
+
+        &__item{
+
+                @include flexible ( flex, row, nowrap , flex-start , center);
                 width: 100%;
-                margin-bottom: var(--p06);
+                height: 100%;
+                padding: var(--p06) 0;
+                border-bottom: 1px solid var(--font-color);
+
+                img{
+                width: var(--p1);
+                margin-right: var(--p1);
+                }
         }
-}
+        }
+
+        .cards{
+
+                width: 100%;
+                @include grid ( grid, repeat(3, 1fr), 1fr,var(--p3), minmax(40vh, auto));
+
+                &__card{
+
+                        overflow: hidden;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        align-content: space-between;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+
+
+                }
+
+                &__img{
+                        border-radius: var(--b-radius);
+                        overflow: hidden;
+                        
+                }
+                &__img--link {
+                        position: relative;
+                        height: 100%;
+                        }
+                        
+                        .overlay {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background-color: var(--background-hero);
+                        overflow: hidden;
+                        width: 100%;
+                        height: 100%;
+                        transition: .5s ease;
+                        }
+                        
+                        a:hover .overlay {
+                                background-color: var(--accent-dark);
+                        }
+                        
+                        .text {
+                        color: var(--font-hero);
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        text-align: center;
+                        }
+                &__info{
+
+                        padding-top: var(--p2);
+                        height: 100%;
+                        width: 100%;
+                        @include flexible ( flex, column, nowrap , space-between, strech );
+                }
+                &__title{
+                        margin-bottom: var(--p06);
+                }
+                .icons{
+                        margin-bottom: var(--p06);
+                }
+                &__btn{
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: var(--p06);
+                }
+        }
+
+
+        
 }
