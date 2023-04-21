@@ -41,7 +41,7 @@
         @include flexible(flex, column, nowrap, flex-start, flex-start);
         &--img{
             border-radius: var(--b-radius);
-            height: 10rem;
+            height: 10em;
         }
 
 

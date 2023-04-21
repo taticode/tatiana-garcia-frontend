@@ -41,6 +41,15 @@ align-items: flex-start;
         padding-right: var(--p1);
         a{
             @include fillTipo;
+        }
+    }
+    &__rrss{
+
+        @include grid ( grid, repeat(2,1fr),1fr, var(--p1), minmax(0vh, auto));
+
+        &--li{
+
+            width: var(--p1);
 
         }
     }
@@ -63,7 +72,6 @@ align-items: flex-start;
 .extra__li{
     margin-right: var(--p1);
     width: var(--p1);
-
 
 }
 
@@ -103,21 +111,13 @@ align-items: flex-start;
     }
 
 }
-.icons__item{
-    :hover{
-        .filled_dark{
+
+.icons-item:hover{
+        .filled-dark{
             fill: var(--accent-dark);
         }
     }
-}
 
-.filled_dark{
-    fill: var(--font-color);
-    transition: var(--transition);
-    transform-origin: center left;
-    
-    :hover{
-        cursor: pointer;
-    }
-}
+
+
 

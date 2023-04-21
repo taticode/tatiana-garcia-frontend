@@ -1,29 +1,25 @@
 
-.contact{
+@import 'src/styles.scss';
 
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    background-color: var(--background);
+.hero{
+
+    background-image: url('../../../assets/background/gracias.jpg');
+
 }
 
 .bg-blue{
     transition: all .5s ;
     animation: colors 4s linear normal backwards;
 }
-@keyframes colors {
-    10%{
-        background: rgb(206, 248, 171);
-    }
-    50%{
-        background: rgb(238, 251, 163);
-    }
-    80%{
-        background-color: rgba(154, 204, 253, 0.989);
-    }
 
-    100% {
-        background-color: var(--background);
-    }
+.filled_dark{
+    fill: var(--font-hero);
+}
 
+.icons{
+    @include grid ( grid, repeat(2,1fr),1fr, var(--p2), minmax(0vh, auto));
+
+    &__item{
+        margin-right: 0;
+    }
 }

@@ -1,24 +1,20 @@
 
 <app-header></app-header>
 
-
-
-    <section id="hero" class="hero">
-        <h1 class="hero__title">¡Hola! soy Tatiana García</h1>
-            <h2 class="hero__subtitle">Frontend developer y diseñadora UX-UI</h2>
-
-    
-        <section class="block-down">
-            <a [routerLink]=" ['/']" fragment="projects" class="btn btn-down">
-                <img src="./assets/icons/dark-icons/down.svg" alt="" class="btn__img">
-            </a>
-        </section>
-            
-    </section>
-        
-
     <main class="main">
-
+        <section id="hero" class="hero">
+            <!-- Autor de la imagen de fondo: Ilya https://www.instagram.com/ilya.creates/ -->
+            <h1 class="hero__title">¡Hola! soy Tatiana García</h1>
+                <h2 class="hero__subtitle">Frontend developer y diseñadora UX-UI</h2>
+    
+        
+            <section class="block-down">
+                <a [routerLink]=" ['/']" fragment="projects" class="btn btn-down">
+                    <img src="./assets/icons/dark-icons/down.svg" alt="" class="btn__img">
+                </a>
+            </section>
+                
+        </section>
     <app-projects></app-projects>
     <app-about></app-about>
     <app-education></app-education>

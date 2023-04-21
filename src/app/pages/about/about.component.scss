@@ -10,7 +10,7 @@
     max-width: var(--max-width-desktop);
     margin-left: auto;
     margin-right: auto;
-    @include grid ( grid, 3fr 1fr, 1fr,var(--p3), minmax(10vh, auto));
+    @include grid ( grid, 2fr 1fr, 1fr,var(--p3), minmax(10vh, auto));
 
     &__img{
         img{

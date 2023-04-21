@@ -379,13 +379,13 @@ export class BbddService {
       rol: 'Diseño UX-UI y desarrollo frontend con Angular 12',
       company: 'Anjana Data SL',
       period: '2021 - 2022',
-      task: 'Trabajé en la mejora del diseño de una aplicación de gobierno del dato haciendo un análisis UX/UI, rediseñando componentes en Figma y maquetando después las mejoras de esta aplicación desarrollada con Sass y Angular. Metodología de trabajo agile e integración de cambios con pull requests. Si trabajas aquí no se te va a olvidar lo que es una Anjana.'
+      task: 'Trabajé en la mejora del diseño de una aplicación de gobierno del dato haciendo un análisis UX/UI, rediseñando componentes en Figma y maquetando después las mejoras de esta aplicación desarrollada con Sass y Angular. Metodología de trabajo agile e integración de cambios con pull requests. Si trabajas aquí no se te va a olvidar lo que es una Anjana 🧚🏻‍♂️'
     },
     { id: uuidv4(),
       rol: 'Maquetación y desarrollo frontend con Angular Js',
       company: 'NTT Data',
       period: '2020 - 2021',
-      task: 'En este puesto desarrollé tareas de debuggin en Angular en una aplicación de gestión de ventas de una empresa de telefonía móvil. Metodología de trabajo agile y subida de cambios con pull requests. En este puesto se trabajó mucho en equipo, los compañeros fueron inmejorables 🔝'
+      task: 'En este puesto desarrollé tareas de debuggin en Angular en una aplicación de gestión de ventas de una empresa de telefonía móvil. Metodología de trabajo agile y subida de cambios con pull requests. En este proyecto se trabajó mucho en equipo, los compañeros fueron inmejorables 🤩'
     },
     { id: uuidv4(),
       rol: 'Maquetación y desarrollo frontend con Angular 7',

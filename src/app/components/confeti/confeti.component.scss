@@ -6,14 +6,13 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: var(--p1);
+    margin-top: var(--p4);
 
     button{
       padding : var(--p06) var(--p1);
       border-radius: var(--b-radius);
       background: linear-gradient(145deg, #ffffff, #dddddd);
       box-shadow:  6px 6px 20px #919191;
-      margin: var(--p1) 0;
 
     }
     button:hover{

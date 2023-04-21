@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'education', component: EducationComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'https://taticode.github.io/tatiana-garcia-frontend/', pathMatch: 'full' },
   { path: '**', redirectTo: 'notFound', pathMatch: 'full' }
 ];
 

@@ -32,9 +32,10 @@ export class HeaderComponent implements OnInit {
   ){
 
   }
+  public button : any = document.querySelector('.switch-theme');
 
   btnSwitch (): void{
-    document.querySelector('.switch-theme')?.classList.toggle('active')
+    this.button?.classList.toggle('active')
   }
   
   toggleRoute(): string{

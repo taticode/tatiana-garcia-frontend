@@ -3,10 +3,17 @@
 
 .acordeon{
     &__article{
-        @include grid ( grid, 1fr 2fr, 1fr, var(--p2), minmax(0vh, auto));
+
+        background-color: var(--background-section);
+        border-radius: var(--b-radius);
+        padding: var(--p2);
+        margin-bottom: var(--p2);
     }
     &__info{
 
+        &--title{
+            margin-bottom: var(--p1);
+        }
     }
 
 }

@@ -37,23 +37,8 @@
 }
 
 .hero{
-  position: relative;
+
   background-image: url('../../../assets/background/desktop.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  background-color:var(--background-hero);
-  background-blend-mode: multiply;
-  &__title{
-    color: var(--font-hero);
-
-  }
-  &__subtitle{
-    color: var(--font-hero);
-    font-family: inherit;
-
-  }
-
 
 
 }
