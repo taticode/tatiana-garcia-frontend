@@ -56,8 +56,9 @@ h2{
 h3{
         font-family     : 'Futura';
         font-size       : map-get($sizes , "size-h3" );
-        color: var(--accent-dark);
+        color: var(--accent);
 }
+
 h4{
         font-family     : 'Futura';
         font-size       : map-get($sizes , "size-h4" );
@@ -177,6 +178,8 @@ a{
         }
 
 }
+
+
 .filled_dark{
         fill: var(--font-color);
         transition: var(--transition);
@@ -184,6 +187,14 @@ a{
         
         :hover{
             cursor: pointer;
+        }
+    }
+
+
+    .icons-item:hover{
+        .filled_dark{
+            transition: var(--transition);
+            fill: var(--accent);
         }
     }
 

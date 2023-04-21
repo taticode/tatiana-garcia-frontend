@@ -12,9 +12,6 @@
     animation: colors 4s linear normal backwards;
 }
 
-.filled_dark{
-    fill: var(--font-hero);
-}
 
 .icons{
     @include grid ( grid, repeat(2,1fr),1fr, var(--p2), minmax(0vh, auto));
@@ -22,4 +19,7 @@
     &__item{
         margin-right: 0;
     }
+}
+svg{
+    fill: var(--font-hero);
 }
