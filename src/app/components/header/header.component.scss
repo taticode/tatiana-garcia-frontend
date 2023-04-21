@@ -97,11 +97,7 @@ align-items: flex-start;
         
     }
 
-    &.active{
-        &::after{
-            left: 50%;
-        }
-    }
+    
 
     .icons{
         img{
@@ -110,6 +106,12 @@ align-items: flex-start;
         }
     }
 
+}
+
+.active{
+    &::after{
+        left: 50%;
+    }
 }
 
 
