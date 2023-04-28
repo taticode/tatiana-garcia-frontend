@@ -17,6 +17,31 @@ export class BbddService {
 
   public projects: any[] = [
     { id: uuidv4(),
+      name: 'Ganache',
+      link: 'https://taticode.github.io/coffeeshopGanache/',
+      projectImg: './assets/img/projects-cards/ganache.jpg',
+      description: 'Proyecto sencillo realizado con HTML, CSS y Javascript. Diseño propio de una single page de una cafetería fictizia llamada Ganache',
+      tech:[
+        {
+          id: uuidv4(),
+          techName: 'javascript',
+          description: 'Javascript'
+        },
+        {
+          id: uuidv4(),
+          techName: 'html5',
+          description: 'HTML'
+        },
+        {
+          id: uuidv4(),
+          techName: 'css3',
+          description: 'CSS'
+        },
+        
+
+      ]
+    },
+    { id: uuidv4(),
       name: 'The Hashi',
       link: './the-hashi',
       description: 'Proyecto realizado en Angular, rediseñando una versión de The Fork pero más “japo”, mostrando sólo restaurantes asiáticos',
@@ -59,7 +84,7 @@ export class BbddService {
         },
       ]
     },
-    { id: uuidv4(),
+/*     { id: uuidv4(),
       name: 'My Gallery',
       link: '#',
       description: "Proyecto realizado con Angular sobre una galería de arte con las obras más conocidas del impresionismo",
@@ -101,7 +126,7 @@ export class BbddService {
           description: 'Control de versiones con git'
         },
       ]
-    },
+    }, */
     { id: uuidv4(),
       name: 'Sobre este portfolio',
       link: '#',
@@ -403,7 +428,7 @@ export class BbddService {
       rol: 'Maquetación con Wordpress',
       company: 'Sapos y Princesas',
       period: '2017',
-      task: 'También una etapa muy chula con buenos compañeros. En esta revista digital maquetaba secciones nuevas de la revista con Wordpress y css'
+      task: 'También una etapa muy buena con buenos compañeros. En esta revista digital maquetaba secciones nuevas de la revista con Wordpress y css'
     },
 
   ]

@@ -1,21 +1,4 @@
 
-@mixin flexible( $display, $direction, $corte, $justify, $align){
-  display: $display;
-  flex-flow: $direction $corte;
-  justify-content: $justify;
-  align-items: $align;
-
-}
-
-
-@mixin grid( $display-grid, $template-columns, $template-rows, $grid-gap, $grid-auto-rows ){
-  display: $display-grid;
-  grid-template-columns: $template-columns;
-  grid-template-rows: $template-rows;
-  grid-gap: $grid-gap;
-  grid-auto-rows: $grid-auto-rows;
-}
-
 @mixin fillTipo{
   transition: all .3s cubic-bezier(0,0,.23,1);
   -webkit-background-clip: text;
@@ -56,10 +39,9 @@
   }
 }
 
-@mixin neomorphism {
-  border-radius: var(--b-radius);
-  background: var(--background);
-
+@mixin neumorphism {
+  box-shadow:  2px 2px 5px var(--shadow),
+  -5px -5px 10px #ffffff;
 }
 
 

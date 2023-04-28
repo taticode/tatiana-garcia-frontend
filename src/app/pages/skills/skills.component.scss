@@ -12,7 +12,7 @@
     margin-right: auto;
 
     &__picture{
-        @include grid ( grid, repeat(5, 1fr), 1fr, var(--p1), minmax(1vh, auto)); 
+        @include gridColumnRepeat ( 5, var(--p1));
         }
     &__picture:not(:last-child){
         margin-bottom: var(--p4);

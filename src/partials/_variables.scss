@@ -5,13 +5,14 @@
 
 /* =========================FONT-SIZES============================= */
 $sizes: (
-    "size-p": 1.1em,
-    "size-h4": 1.3em,
-    "size-h3": 1.5em,
+    "size-p": 1em,
+    "size-h4": 1.2em,
+    "size-h3": 1.4em,
     "size-h2": 2em,
     "size-h1": 2.8em,
     "size-logo": 1.8em,
-    "size-hero": 3em
+    "size-hero": 3em,
+    "size-hero-subtitle": 1.7em
     );
 
 
@@ -26,6 +27,7 @@ $sizes: (
     --p2: 2em;
     --p3: 3em;
     --p4: 4em;
+    --p5: 5em;
     --p-section: var(--p4);
 
 
@@ -52,3 +54,4 @@ $sizes: (
 
 
 }
+

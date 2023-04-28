@@ -1,7 +1,7 @@
-
+@import '_reset';
 @import '_colors';
 @import '_variables';
-@import '_reset';
+@import '_responsive';
 @import '_mixins';
 @import '_states';
 
@@ -44,7 +44,14 @@ h1{
 .hero__title{
         font-family: 'Impact';
         letter-spacing: 0.01em;
+        color: var(--font-hero);
         font-size: map-get($sizes , "size-hero" ); 
+}
+.hero__subtitle{
+        color: var(--font-hero);
+        font-family: "Futura";
+        margin-bottom: var(--p2);
+        font-size: map-get($sizes , "size-hero-subtitle" );
 }
 
 h2{
@@ -98,17 +105,18 @@ button{
 
 }
 .hero{
+        text-align: center;
         min-height: 100vh;
         @include flexible(flex, column, nowrap, center, center ); 
-        &__title{
-                text-align: center;
-        }
-        &__span{
-                display: block;
-                font-family: "Futura";
-                font-size: 0.6em;
-        }
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        background-color:var(--background-hero);
+        background-blend-mode: multiply;
+
 }
+
 .icons{
         @include flexible(flex, row, nowrap, flex-start, center ); 
 
@@ -160,25 +168,6 @@ a{
         z-index: 20;
 }
 
-.hero{
-        position: relative;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center bottom;
-        background-color:var(--background-hero);
-        background-blend-mode: multiply;
-        &__title{
-        color: var(--font-hero);
-
-        }
-        &__subtitle{
-                color: var(--font-hero);
-                font-family: inherit;
-                margin-bottom: var(--p2);
-        }
-
-}
-
 
 .filled_dark{
         fill: var(--font-color);
@@ -186,15 +175,50 @@ a{
         transform-origin: center left;
         
         :hover{
-            cursor: pointer;
+        cursor: pointer;
         }
-    }
+}
 
 
-    .icons-item:hover{
+.icons-item:hover{
         .filled_dark{
-            transition: var(--transition);
-            fill: var(--accent);
+                transition: var(--transition);
+                fill: var(--accent);
         }
-    }
+}
 
+
+
+
+@media screen and (max-width: 1328px){
+        html{
+                font-size: 1.1em;
+        }
+
+        .big-block{
+        
+                padding: var(--p2);
+                margin-top: var(--p2);
+                &__h2{
+                        margin-bottom: var(--p04);
+                }
+        
+        }
+        
+}
+
+
+
+@media screen and (max-width: 960px){
+        html{
+                font-size: 0.9em;
+        }
+
+
+}
+
+@media screen and (max-width: 768px){
+
+
+
+}

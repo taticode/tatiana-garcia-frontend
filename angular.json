@@ -31,22 +31,25 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src/partials"
               ]
             },
-            "scripts": []
+            "scripts": [
+              "src/assets/fonts/fontawesome-free-6.4.0-web/js/all.min.js"
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",

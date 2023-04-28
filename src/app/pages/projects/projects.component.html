@@ -4,7 +4,7 @@
     <div class="cards" *ngIf="projects">
         <article class="cards__card" href="#" *ngFor="let project of projects">
             <div class="cards__img">
-                <a class="cards__img--link" [href]="project.link">
+                <a class="cards__img--link" [href]="project.link" target="_blank" rel="nofollow noopener">
                     <img [src]="project.projectImg" [alt]="project.tech.description" [title]="project.tech.description">
                     <div class="overlay">
                         <h3 class="text">Visitar proyecto</h3>
@@ -12,24 +12,19 @@
                 </a>
             </div>
             <div class="cards__info">
-                <div class="card__box">
+                <div class="cards__box">
                     <h3 class="cards__title">{{project.name}}</h3>
                     <p class="cards__description">{{project.description}}</p>
-    
-                </div>
-                <div class="cards__box">
                     <h4 class="cards__title">Tecnologías utilizadas</h4>
                     <div class="icons" *ngIf="project.tech" >
                         <div class="icons__item" *ngFor="let tech of project.tech">
                             <img [src]=" activePath + tech.techName+ '.svg'" [alt]="tech.description" [title]="tech.description">
                             <p>{{tech.description}}</p>
                         </div>
-
                     </div>
                 </div>
                 <div class="cards__box">
-      
-                    <a href="https://github.com/taticode/the-hashi" target="_blank" rel="noopener noreferrer" class="btn cards__btn">Repositorio en github</a>
+                    <a href="https://github.com/taticode/the-hashi" target="_blank" rel="nofollow noopener" class="btn cards__btn">Repositorio en github</a>
                     <a href="#" class="btn cards__btn">Case study</a>
                 </div>
 

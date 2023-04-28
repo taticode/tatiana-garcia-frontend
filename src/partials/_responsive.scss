@@ -1,8 +1,33 @@
 
 
-@mixin mv ($medida: 480px) {
-    @media screen and (max-width: $medida) {
-        @content
+@mixin flexible( $display, $direction, $corte, $justify, $align){
+    display: $display;
+    flex-flow: $direction $corte;
+    justify-content: $justify;
+    align-items: $align;
+
+}
+
+@mixin gridColumnRepeat( $columnas, $espacio ){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espacio;
+
+    @media screen and (max-width: 480px){
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@mixin gridTwoDifferentColums ($columna1, $columna2, $espacio){
+    display: grid; 
+    grid-template-columns: $columna1 $columna2;
+    gap: $espacio;
+
+
+    @media screen and (max-width: 480px){
+        grid-template-columns: 1fr;
+
     }
 }
 

@@ -2,7 +2,7 @@
 @import 'src/styles.scss';
 
 .tabs{
-    @include grid ( grid, 1fr 2fr,1fr, var(--p2), minmax(0vh, auto));
+    @include gridTwoDifferentColums ( 1fr, 2fr, var(--p2));
 
 
     &__menu {
@@ -33,7 +33,7 @@
     }
 
     &__content{
-        @include grid ( grid, 1fr 2fr, 1fr, var(--p2), minmax(0vh, auto));
+        @include gridTwoDifferentColums ( 1fr, 2fr, var(--p2));
         height: inherit;
 
     }
@@ -63,7 +63,7 @@
         }
 
         &--skills{
-            @include grid ( grid, repeat(2,1fr), 1fr, var(--p06), minmax(2vh, auto));
+            @include gridColumnRepeat ( 2, var(--p1));
             width: 100%;
             margin-top: var(--p1);
 

@@ -14,12 +14,23 @@
 
 
 .icons{
-    @include grid ( grid, repeat(2,1fr),1fr, var(--p2), minmax(0vh, auto));
+    @include flexible(flex, row, nowrap, space-between, center ); 
 
     &__item{
-        margin-right: 0;
+        margin-right: var(--p1);
+
+        a{
+            @include flexible(flex, row, nowrap, flex-start, center ); 
+            color: inherit;
+        }
+        p{
+            padding-bottom: 0;
+        }
     }
 }
 svg{
-    fill: var(--font-hero);
+
+    width: var(--p2);
+    height: var(--p2);
+    margin-right: var(--p1);
 }

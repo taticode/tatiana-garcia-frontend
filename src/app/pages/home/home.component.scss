@@ -14,6 +14,7 @@
 .btn-down{
   position: absolute;
   left: 0;
+  bottom: 0;
   margin-left: 50%;
   align-self: flex-end;
   animation-duration: 2s;
@@ -39,6 +40,26 @@
 .hero{
 
   background-image: url('../../../assets/background/desktop.jpg');
-
+  text-align: center;
 
 }
+
+@media screen and (max-width: 1328px){
+  .hero{
+    padding: var(--p5) var(--p2);
+  }
+}
+        
+        
+
+@media screen and (max-width: 960px){
+
+
+  .block-down{
+          display: none;
+  }
+  
+}
+
+
+  

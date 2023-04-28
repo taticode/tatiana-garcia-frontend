@@ -8,9 +8,10 @@ import * as confetti from 'canvas-confetti';
 })
 export class ConfetiComponent {
 
-
+    public confettiCanvas: HTMLCanvasElement | undefined
     public clicked = false;
     constructor(
+
       private renderer2: Renderer2,
       private elementRef: ElementRef
     ) {}
@@ -31,11 +32,21 @@ export class ConfetiComponent {
       });
 
       myConfetti();
-
       this.clicked = true;
-    }
+
+      setTimeout(() => {
+        this.renderer2.removeChild(this.elementRef.nativeElement, canvas);
+      }, 3000); 
+
+    } 
 
 
+
+  }
 
   
-}
+  
+  
+  
+  
+  
