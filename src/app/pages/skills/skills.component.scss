@@ -13,6 +13,9 @@
 
     &__picture{
         @include gridColumnRepeat ( 5, var(--p1));
+        p{
+            padding-bottom: 0;
+        }
         }
     &__picture:not(:last-child){
         margin-bottom: var(--p4);

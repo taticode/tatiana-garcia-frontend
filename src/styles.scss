@@ -118,11 +118,11 @@ button{
 }
 
 .icons{
-        @include flexible(flex, row, nowrap, flex-start, center ); 
-
+        @include flexible(flex, row, nowrap, center, center ); 
+        padding: var(--p06);
         &__item{
                 width: var(--p2);
-                margin-right: var(--p1);
+
         }
         &__link{
                 width: 100%;
@@ -146,6 +146,7 @@ a{
         overflow: hidden;
         color: var(--btn-font-color);
         @include fillBtn;
+        @include neumorphism;
 
         cursor: pointer;
         transition: var(--transition);
@@ -160,12 +161,15 @@ a{
 }
 
 .btn-up, .btn-down{
-        width: var(--p2);
+        width:  var(--p2);
+        height: var(--p2);
         padding: var(--p06);
-        position: fixed;
         bottom: var(--p2);
         right: var(--p4);
+        position: fixed;
         z-index: 20;
+        @include flexible(flex, row, nowrap, center, center ); 
+
 }
 
 
@@ -210,9 +214,7 @@ a{
 
 
 @media screen and (max-width: 960px){
-        html{
-                font-size: 0.9em;
-        }
+
 
 
 }

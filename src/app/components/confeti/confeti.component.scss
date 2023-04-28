@@ -12,7 +12,6 @@
       border-radius: var(--b-radius);
       padding : var(--p1) var(--p2);
       border-radius: var(--b-radius);
-      background-color: var(--accent);
       cursor: pointer;
       z-index: 2;
     }
@@ -30,9 +29,10 @@
     }
 
     .cono{
-      width: var(--p4);
-      height: var(--p4);
+      width: var(--p2);
+      height: var(--p2);
       padding-bottom: 0;
+      fill: none;
     }
   }
   

@@ -19,7 +19,7 @@ export class BbddService {
     { id: uuidv4(),
       name: 'Ganache',
       link: 'https://taticode.github.io/coffeeshopGanache/',
-      projectImg: './assets/img/projects-cards/ganache.jpg',
+      projectImg: './assets/img/projects-cards/ganache.webp',
       description: 'Proyecto sencillo realizado con HTML, CSS y Javascript. Diseño propio de una single page de una cafetería fictizia llamada Ganache',
       tech:[
         {
@@ -45,7 +45,7 @@ export class BbddService {
       name: 'The Hashi',
       link: './the-hashi',
       description: 'Proyecto realizado en Angular, rediseñando una versión de The Fork pero más “japo”, mostrando sólo restaurantes asiáticos',
-      projectImg: './assets/img/projects-cards/ramen-shifu-atocha.jpg',
+      projectImg: './assets/img/projects-cards/ramen-shifu-atocha.webp',
       tech:[
         {
           id: uuidv4(),
@@ -88,7 +88,7 @@ export class BbddService {
       name: 'My Gallery',
       link: '#',
       description: "Proyecto realizado con Angular sobre una galería de arte con las obras más conocidas del impresionismo",
-      projectImg: './assets/img/projects-cards/le-moulin-de-la-galette.jpg',
+      projectImg: './assets/img/projects-cards/le-moulin-de-la-galette.webp',
       tech:[
         {
           id: uuidv4(),
@@ -131,7 +131,7 @@ export class BbddService {
       name: 'Sobre este portfolio',
       link: '#',
       description: "Más información sobre el proceso de creación de este portfolio, de diseño propio, creado con Angular ",
-      projectImg: './assets/img/projects-cards/portfolio-design.jpg',
+      projectImg: './assets/img/projects-cards/portfolio-design.webp',
       tech:[
         {
           id: uuidv4(),
@@ -218,7 +218,7 @@ export class BbddService {
       knowledge: 'En este curso profundicé más en la creación de aplicaciones con Angular 15, empecé a conocer React y cree mis propias bases de datos con Mongo DB, todo esto trabajando con node js para la instalación de paquetes.',
       finalizado: 'Diciembre de 2022.',
       link: 'https://trazos.net/online/formacion-online/desarrollo-web/curso-online-de-frameworks-con-reactjs-angular-nodejs-y-mongodb/',
-      thumbnail: './assets/img/education/trazos.png',
+      thumbnail: './assets/img/education/trazos.webp',
       thumbnailAlt: 'Curso de Frameworks con Angular, React js, Node js y Mongo DB online en Escuela Trazos'},
 
     { id: uuidv4(),
@@ -245,7 +245,7 @@ export class BbddService {
       knowledge: 'En este curso aprendí a buscar soluciones a problemas en productos digitales, a averiguar las necesitades del usuario utilizando herramientas de investigación y a crear diseños que solucionaran esos problemas desde un prototipo sencillo en baja fidelidad, hasta el diseño final.',
       finalizado: 'Febrero de 2021.',
       link: 'https://trazos.net/online/formacion-online/productos-digitales/bootcamp-online-de-ux-ui/',
-      thumbnail: './assets/img/education/bootcamp-ux-ui-trazos.jpg',
+      thumbnail: './assets/img/education/bootcamp-ux-ui-trazos.webp',
       thumbnailAlt: 'Bootcamp ux ui online en Escuela Trazos' },
 
     { id: uuidv4(),
@@ -263,7 +263,7 @@ export class BbddService {
       knowledge: 'Curso especializado en Javascript, en una modalidad con muchos ejercicios prácticos y completa. Cuyo contenido abarca todo javascript, desde los tipos de datos hasta eventos de ratón, creación de objetos o consultar APIS',
       finalizado: 'Noviembre de 2020.',
       link: 'https://asociacionaepi.es/curso-de-javascript-ajax-json-jquery/',
-      thumbnail: './assets/img/education/javascript-profesional.png',
+      thumbnail: './assets/img/education/javascript-profesional.webp',
       thumbnailAlt: 'holi' },
 
     { id: uuidv4(),
@@ -285,7 +285,7 @@ export class BbddService {
       knowledge: 'Curso especializado en Angular, en su versión 7. Aprendí las características principales de este framework de javascript, componentes, servicios, directivas, pipes, etc.',
       finalizado: 'Diciembre de 2018.',
       link: '',
-      thumbnail: './assets/img/education/angular.png',
+      thumbnail: './assets/img/education/angular.webp',
       thumbnailAlt: 'holi' },
 
     { id: uuidv4(),
@@ -312,7 +312,7 @@ export class BbddService {
       knowledge: 'Curso de diseño y maquetación muy completo con muchos ejercicios prácticos donde adquirí una buena base de html y css y creaba funcionalidades o hacía animaciones más complejas con jquery',
       finalizado: 'Junio de 2018.',
       link: '',
-      thumbnail: './assets/img/education/html-css.png',
+      thumbnail: './assets/img/education/html-css.webp',
       thumbnailAlt: 'holi' },
 
     { id: uuidv4(),
@@ -329,7 +329,7 @@ export class BbddService {
       knowledge: 'Curso del gestor de contenidos Wordpress, creación de temas hijo y de plantillas usando el tema DIVI',
       finalizado: 'Mayo de 2016.',
       link: 'https://www.cursoswordpressmadrid.com/curso-wordpress-profesional-en-madrid/',
-      thumbnail: './assets/img/education/wordpress.png',
+      thumbnail: './assets/img/education/wordpress.webp',
       thumbnailAlt: 'holi' },
   
   ]
