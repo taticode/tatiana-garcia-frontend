@@ -12,14 +12,27 @@
     margin-right: auto;
     @include gridTwoDifferentColums ( 3fr, 1fr, var(--p1));
 
-    &__img{
-        img{
+    &__img {
+        img {
+
             width: 100%;
+            height: auto;
             margin-top: var(--p4);
             border-radius: var(--b-radius);
             overflow: hidden;
             box-shadow: var(--p1) var(--p1) 0 0 var(--accent);
         }
 
+    }
+}
+
+@media screen and (max-width: 960px){
+    .about{
+        &__img{
+            img{
+                max-width: 15rem;
+                margin: var(--p4) auto;
+            }
+        }
     }
 }

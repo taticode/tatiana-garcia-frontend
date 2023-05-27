@@ -3,8 +3,9 @@
     <h2 class="big-block__h2">Proyectos</h2>
     <div class="cards" *ngIf="projects">
         <article class="cards__card" href="#" *ngFor="let project of projects">
+            <h3 class="cards__title">{{project.name}}</h3>
             <div class="cards__img">
-                <a class="cards__img--link" [href]="project.link" target="_blank" rel="nofollow noopener">
+                <a class="cards__img--link" [href]="project.link" target="_blank" rel="nofollow noopener" aria-label="link para visitar proyecto">
                     <img [src]="project.projectImg" [alt]="project.tech.description" [title]="project.tech.description">
                     <div class="overlay">
                         <h3 class="text">Visitar proyecto</h3>
@@ -13,7 +14,7 @@
             </div>
             <div class="cards__info">
                 <div class="cards__box">
-                    <h3 class="cards__title">{{project.name}}</h3>
+      
                     <p class="cards__description">{{project.description}}</p>
                     <h4 class="cards__title">Tecnologías utilizadas</h4>
                     <div class="icons" *ngIf="project.tech" >
@@ -24,8 +25,8 @@
                     </div>
                 </div>
                 <div class="cards__box">
-                    <a href="https://github.com/taticode/the-hashi" target="_blank" rel="nofollow noopener" class="btn cards__btn">Repositorio en github</a>
-                    <a href="#" class="btn cards__btn">Case study</a>
+                    <a href="https://github.com/taticode/the-hashi" target="_blank" rel="nofollow noopener" class="btn cards__btn" aria-label="Link al repositorio del proyecto en github">Repositorio en github</a>
+                    <a href="#" class="btn cards__btn" aria-label="link al case study de este proyecto">Case study</a>
                 </div>
 
             </div>

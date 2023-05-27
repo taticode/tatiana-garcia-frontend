@@ -69,10 +69,7 @@ width: 100%;
 
 
 .logo{
-    &__img{
-        width: var(--p2);
-        margin-right: var(--p1);
-    }
+
     &__title{
         font-size: map-get($sizes, "size-logo" );
         @include fillTipo;
@@ -109,8 +106,9 @@ width: 100%;
     
 
     .icons{
-        img{
+        img {
             width: var(--p1);
+            height: 100%;
             margin: var(--p04) var(--p06);
         }
     }

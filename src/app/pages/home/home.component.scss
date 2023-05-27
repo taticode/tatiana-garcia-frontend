@@ -39,7 +39,7 @@
 
 .hero{
 
-  background-image: url('../../../assets/background/desktop-background.webp');
+/*   background-image: url('../../../assets/background/desktop-background.webp'); */
   text-align: center;
 
 }
@@ -49,17 +49,41 @@
     padding: var(--p5) var(--p2);
   }
 }
-        
-        
-
-@media screen and (max-width: 960px){
-
-
-  .block-down{
-          display: none;
+@media screen  and (min-width: 1440px){
+  .hero{
+  background-image: url('../../../assets/background/desktop-background.webp');
   }
-  
+
 }
 
+@media screen  and (min-width: 960px){
+  .hero{
+  background-image: url('../../../assets/background/desktop-background-1024.webp');
+  }
 
-  
+}
+@media screen  and (min-width: 768px) and (max-width: 960px){
+  .hero{
+  background-image: url('../../../assets/background/desktop-background-960.webp');
+  }
+
+}
+@media screen  and (min-width: 480px) and (max-width: 768px){
+  .hero{
+  background-image: url('../../../assets/background/desktop-background-768.webp');
+  }
+
+}
+
+@media screen  and (min-width: 320px) and (max-width: 480px){
+  .hero{
+  background-image: url('../../../assets/background/desktop-background-480.webp');
+  }
+
+}
+@media screen and (max-width: 320px){
+  .hero{
+  background-image: url('../../../assets/background/desktop-background-320.webp');
+  }
+
+}
