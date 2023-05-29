@@ -84,49 +84,6 @@ export class BbddService {
         },
       ]
     },
-/*     { id: uuidv4(),
-      name: 'My Gallery',
-      link: '#',
-      description: "Proyecto realizado con Angular sobre una galería de arte con las obras más conocidas del impresionismo",
-      projectImg: './assets/img/projects-cards/le-moulin-de-la-galette.webp',
-      tech:[
-        {
-          id: uuidv4(),
-          techName: 'javascript',
-          description: 'Javascript'
-        },
-        {
-          id: uuidv4(),
-          techName: 'typescript',
-          description: 'Typescript'
-        },
-        {
-          id: uuidv4(),
-          techName: 'mongo-DB',
-          description: 'Api rest con mongo DB'
-        },
-        {
-          id: uuidv4(),
-          techName: 'angular',
-          description: 'Angular '
-        },
-        { 
-          id: uuidv4(),
-          techName: 'sass',
-          description: 'Sass '
-        },
-        { 
-          id: uuidv4(),
-          techName: 'bem',
-          description: 'BEM'
-        },
-        { 
-          id: uuidv4(),
-          techName: 'github',
-          description: 'Control de versiones con git'
-        },
-      ]
-    }, */
     { id: uuidv4(),
       name: 'Sobre este portfolio',
       link: '#',
@@ -145,8 +102,8 @@ export class BbddService {
         },
         {
           id: uuidv4(),
-          techName: 'mongo-DB',
-          description: 'Api rest con mongo DB'
+          techName: 'typescript',
+          description: 'base de datos en servicio'
         },
         {
           id: uuidv4(),
