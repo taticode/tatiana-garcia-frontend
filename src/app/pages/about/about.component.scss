@@ -10,13 +10,13 @@
     max-width: var(--max-width-desktop);
     margin-left: auto;
     margin-right: auto;
-    @include gridTwoDifferentColums ( 3fr, 1fr, var(--p1));
+    @include gridTwoDifferentColums ( 3fr, 1fr, var(--p2));
 
     &__img {
         img {
 
-            width: 100%;
-            height: auto;
+            width: 19rem;
+            height: 19rem;
             margin-top: var(--p4);
             border-radius: var(--b-radius);
             overflow: hidden;
@@ -30,7 +30,8 @@
     .about{
         &__img{
             img{
-                max-width: 15rem;
+                width: 15rem;
+                height: 15rem;
                 margin: var(--p4) auto;
             }
         }

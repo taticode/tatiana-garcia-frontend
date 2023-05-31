@@ -6,7 +6,8 @@ import { EducationComponent } from './pages/education/education.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-
+import { PagesModule } from './pages/pages.module';
+import { ComponentsModule } from './components/components.module';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -21,8 +22,15 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { 
-     }),
+/*     RouterModule.forRoot(routes, { 
+     }), */
+     ComponentsModule,
+     PagesModule,
+     RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+      scrollOffset: [0, 80]
+    }),
   ],
   exports: [RouterModule]
 })

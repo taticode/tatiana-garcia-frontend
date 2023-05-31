@@ -132,27 +132,26 @@ width: 100%;
             display: block;
     }
     .header{
-
-    padding: var(--p1) var(--p2);
-    @include gridColumnRepeat ( 2, var(--p06));
-    align-items: center;
-    background-color: var(--background-section);
-    
+        padding: var(--p1) var(--p2);
+        @include gridColumnRepeat ( 2, var(--p06));
+        align-items: center;
+        background-color: var(--background-section);
+        
     }
 
     .menu-btn{
-    z-index: 2;
-    right: 20px;
-    top: 20px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    font-size: 20px;
-    color: var(--font-color);
-    @include flexible(flex, row, nowrap, center, center ); 
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+        z-index: 2;
+        right: 20px;
+        top: 20px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: var(--font-color);
+        @include flexible(flex, row, nowrap, center, center ); 
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
     }
 
     #active:checked ~ .menu-btn{
@@ -212,9 +211,8 @@ width: 100%;
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 960px){
     .header{
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
