@@ -15,7 +15,7 @@ export class TabsComponent implements OnInit {
     public bbddService : BbddService
   ) { }
 
-  public dataTabs = this.bbddService.infoTabs
+  public dataTabs = this.bbddService.CourseTabs
   public seleccionado: number = 0
 
 

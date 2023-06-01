@@ -14,7 +14,7 @@
             <div class="tabs__picture">
                 <img class="tabs__picture--img" [src]="tab.thumbnail" [alt]="tab.tumbnailAlt">
                 <div class="tabs__picture--skills" *ngIf="tab.skill">
-                    <picture class="tabs__picture--item" *ngFor="let skill of tab.skill" >
+                    <picture class="tabs__picture--item" *ngFor="let skill of tab.skills" >
                         <img  [src]=" activePath + skill.img+ '.svg'" [alt]="skill.alt" [title]="skill.alt">
                         <p>{{skill.alt}}</p>
                     </picture>
