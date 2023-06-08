@@ -108,7 +108,7 @@ button{
 }
 .hero{
         text-align: center;
-        min-height: 100vh;
+        min-height: 85vh;
         @include flexible(flex, column, nowrap, center, center ); 
         position: relative;
         background-repeat: no-repeat;
@@ -124,7 +124,7 @@ button{
         padding: var(--p06);
         &__item{
                 width: var(--p2);
-                height: 100%;
+                height: auto;
 
         }
         &__link{

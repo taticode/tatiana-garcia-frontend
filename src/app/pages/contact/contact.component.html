@@ -1,27 +1,44 @@
 
 
-<section id="contact" class="big-block hero contact">
-<!--     Autora de la imagen de fondo: Priscilla Du Preez-->    
-    <h2 class="hero__title">Contacto</h2>
-    <h2 class="hero__subtitle">Si deseas contactar conmigo, aquí te dejo mis redes sociales</h2>
-    <ul class="icons">
-        <li class="icons__item btn">
-            <a href="https://www.linkedin.com/in/tatianagarciafrontend/" target="_blank" rel="nofollow noopener" aria-label="enlace al perfil de Github de Tatiana García">
-                <i class="fa-brands fa-linkedin"></i>
-                <p>Linkedin</p> 
-            </a>
+<section id="contact" class="big-block contact"> 
 
-        </li>
-        <li class="icons__item btn">
-            <a href="https://github.com/taticode" target="_blank" rel="nofollow noopener" aria-label="enlace al perfil de Github de Tatiana García">
-                <i class="fa-brands fa-github"></i>
-                <p>Github</p>
-            </a>
-        </li>
-    </ul>
+    <h2>Contacto</h2>
+
+    <article class="wrap">
+     <div class="contact-sign">
+        <p>Si deseas contactar conmigo, aquí te dejo mis redes sociales</p>
+        <ul class="icons">
+            <li class="icons__item btn">
+                <a href="https://www.linkedin.com/in/tatianagarciafrontend/" target="_blank" rel="nofollow noopener" aria-label="enlace al perfil de Linkedin de Tatiana García">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p>Linkedin</p> 
+                </a>
     
+            </li>
+            <li class="icons__item btn">
+                <a href="https://github.com/taticode" target="_blank" rel="nofollow noopener" aria-label="enlace al perfil de Github de Tatiana García">
+                    <i class="fa-brands fa-github"></i>
+                    <p>Github</p>
+                </a>
+            </li>
+        </ul>
+     </div>
 
-    <app-confeti></app-confeti>
+    
+        <nav class="footer-menu">
+            <ul class="footer-menu__ul" >
+                    <li class="footer-menu__li" *ngFor="let link of links">
+                        <a [routerLink]="[rootRoute]" [fragment]="link.fragment" aria-label="Enlace a sección de la home">{{ link.title }}</a>
+                    </li>
+            </ul>
+    
+        </nav>
+    </article>
+
+        <a class="contact-claim" href="https://github.com/taticode" target="_blank" rel="nofollow noopener" aria-label="enlace al perfil de Github de Tatiana García">
+           Web creada por Tatiana García Frontend developer y diseñadora UX-UI
+        </a>
+
 </section>
 
 

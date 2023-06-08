@@ -1,5 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-import { ConfetiComponent } from 'src/app/components/confeti/confeti.component';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-contact',
@@ -10,9 +10,21 @@ export class ContactComponent implements OnInit{
   public clicked = false;
   renderer2: any;
   elementRef: any;
-  constructor(private confetiComponent: ConfetiComponent){
-    
-  }
+
+
+
+  rootRoute = '/';
+  links = [
+      { title: 'Home', fragment: 'hero' },
+      { title: 'Proyectos', fragment: 'projects' },
+      { title: 'Sobre mí', fragment: 'about' },
+      { title: 'Formación', fragment: 'education' },
+      { title: 'Experiencia', fragment: 'experience' },
+      { title: 'Contacto', fragment: 'contact' },
+  ];
+
+
+
   ngOnInit(): void {
   }
 

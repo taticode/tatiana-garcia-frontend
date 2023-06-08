@@ -47,16 +47,13 @@ export class HeaderComponent implements OnInit {
 
     this.bbddService.disparadorRuta.emit(this.activePath)
   }
-  fillActivePathOnService():void {
-
-  }
 
   switchTheme(): void{
     this.themeBody = document.body.classList.toggle('dark')
     this.btnSwitch()
     this.toggleRoute()
     this.emitActivePath()
-    this.fillActivePathOnService()
+
   }
 
   ngOnInit(): void {

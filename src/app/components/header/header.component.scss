@@ -30,6 +30,7 @@ width: 100%;
     @include flexible(flex, row, nowrap, flex-start, center ); 
     &__ul{
         @include flexible(flex, row, nowrap, flex-end, center ); 
+        margin: 0 var(--p1);
     }
     &__li{
         margin-right: var(--p1);

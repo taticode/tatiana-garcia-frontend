@@ -41,7 +41,7 @@
 
 @mixin fillCardLink{
   transition: all .2s cubic-bezier(0,0,.23,1);
-  background-image: linear-gradient(90deg, var(--background-card-link) , var(--background-card-link) 50%, var(--background-hero) 0);
+  background-image: linear-gradient(90deg, var(--background-card-link) , var(--background-card-link) 50%, var(--background-hero) 20%);
   background-size: 200% 100%;
   background-position: 100%;
 

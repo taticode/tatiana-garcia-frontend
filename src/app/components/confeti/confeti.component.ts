@@ -10,6 +10,7 @@ export class ConfetiComponent {
 
     public confettiCanvas: HTMLCanvasElement | undefined
     public clicked = false;
+
     constructor(
 
       private renderer2: Renderer2,
@@ -28,16 +29,19 @@ export class ConfetiComponent {
 
       const myConfetti = confetti.create(canvas, {
         resize: true // will fit all screen sizes
-
       });
 
-      myConfetti();
+      myConfetti({
+        particleCount: 300,
+        spread: 360,
+        gravity: 1
+      });
       this.clicked = true;
 
-      setTimeout(() => {
+    setTimeout(() => {
         this.renderer2.removeChild(this.elementRef.nativeElement, canvas);
       }, 3000); 
-
+ 
     } 
 
 

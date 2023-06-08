@@ -11,12 +11,6 @@
             <i id="cerrar" class="fa-solid fa-xmark"></i>
         </label>
         <nav class="main-menu wrapper">
-
-            <ul class="main-menu__ul" >
-                    <li class="main-menu__li" *ngFor="let link of links">
-                        <a [routerLink]="[rootRoute]" [fragment]="link.fragment" aria-label="Enlace a sección de la home">{{ link.title }}</a>
-                    </li>
-            </ul>
             <div class="icons extra">
                 <button aria-label="toggle themes dark and light" class="switch-theme icons__item btn" (click)="switchTheme()">
                     <div class="icons">
@@ -27,6 +21,12 @@
                     </div>
                 </button>
             </div>
+            <ul class="main-menu__ul" >
+                    <li class="main-menu__li" *ngFor="let link of links">
+                        <a [routerLink]="[rootRoute]" [fragment]="link.fragment" aria-label="Enlace a sección de la home">{{ link.title }}</a>
+                    </li>
+            </ul>
+
             <ul class="main-menu__rrss" >
                 <li class="main-menu__rrss--li icons-item icons__item btn">
                     <a href="https://www.linkedin.com/in/tatianagarciafrontend/" target="_blank" rel="nofollow noopener" aria-label="enlace al perfil de Linkedin de Tatiana García">
