@@ -71,6 +71,9 @@ width: 100%;
 
 .logo{
 
+    a{
+        width: fit-content;
+    }
     &__title{
         font-size: map-get($sizes, "size-logo" );
         @include fillTipo;
@@ -183,8 +186,7 @@ width: 100%;
     @include neumorphism;
     &__ul{
             @include flexible(flex, column, nowrap, flex-start, flex-end );
-            margin-bottom: var(--p1); 
-
+            margin: 0;
             ::after{
             content: '';
             display: block;
@@ -202,6 +204,10 @@ width: 100%;
             width: var(--p2);
 
             }
+    }
+
+    .extra{
+        padding: 0;
     }
     }
 

@@ -215,3 +215,18 @@ a{
         
 }
 
+
+@media screen and (max-width: 960px){
+        .hero__title{
+                font-size: 2.4em;
+        }
+        .hero__subtitle{
+                font-size: 1.4em;
+        }
+        .btn, .btn-up{
+                padding: var(--p04) var(--p06);
+        }
+        .btn-up, .btn-down{
+                right: var(--p2);
+        }
+    }

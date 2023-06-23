@@ -83,3 +83,24 @@
           }
     }
 }
+
+
+@media screen and (max-width: 960px){
+    .contact{
+      
+        .footer-menu{
+            &__ul{
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+                }
+            }
+
+            .contact-claim{
+                &::after{
+                    top: var(--p4);
+                }
+            }
+        }
+
+}

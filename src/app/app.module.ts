@@ -16,7 +16,7 @@ import { ComponentsModule } from './components/components.module';
     BrowserModule,
     AppRoutingModule,
     ComponentsModule,
-    PagesModule,
+    PagesModule
 
   ],
   providers: [
