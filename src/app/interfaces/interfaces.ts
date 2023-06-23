@@ -8,6 +8,7 @@ export interface Iproject {
     projectImg:  string;
     description: string;
     tech:        Itech[];
+    repo:        string;
 }
 
 export interface Itech {

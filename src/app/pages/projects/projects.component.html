@@ -24,9 +24,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="cards__box">
-                    <a href="https://github.com/taticode/the-hashi" target="_blank" rel="nofollow noopener" class="btn cards__btn" aria-label="Link al repositorio del proyecto en github">Repositorio en github</a>
-                    <a href="#" class="btn cards__btn" aria-label="link al case study de este proyecto">Case study</a>
+                <div class="cards__box" *ngIf="project.repo">
+                    <a [href]="project.repo" target="_blank" rel="nofollow noopener" class="btn cards__btn" aria-label="Link al repositorio del proyecto en github">Repositorio en github</a>
                 </div>
 
             </div>

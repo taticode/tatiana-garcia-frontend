@@ -46,13 +46,41 @@ export class BbddService {
         },
         
 
-      ]
+      ],
+      repo: 'https://github.com/taticode/coffeeshopGanache',
+    },
+    { id: uuidv4(),
+      name: "Memory Game",
+      link: "https://taticode.github.io/memory/",
+      projectImg: "./assets/img/projects-cards/captura.png",
+      description: "Juego de memoria para aprender inglés",
+      tech:[
+        <Itech>
+        {
+          id: uuidv4(),
+          techName: "javascript",
+          description: "Javascript"
+        },
+        <Itech>
+        {
+          id: uuidv4(),
+          techName: "html5",
+          description: "HTML"
+        },
+        <Itech>
+        {
+          id: uuidv4(),
+          techName: "css3",
+          description: "CSS"
+        },
+      ],
+      repo: 'https://github.com/taticode/memory',
     },
     { id: uuidv4(),
       name: "The Hashi",
       link: "./the-hashi",
-      description: "Proyecto realizado en Angular, rediseñando una versión de The Fork pero más “japo”, mostrando sólo restaurantes asiáticos",
       projectImg: "./assets/img/projects-cards/ramen-shifu-atocha.webp",
+      description: "Proyecto realizado en Angular, rediseñando una versión de The Fork pero más “japo”, mostrando sólo restaurantes asiáticos",
       tech:[
         {
           id: uuidv4(),
@@ -89,51 +117,10 @@ export class BbddService {
           techName: "github",
           description: "Control de versiones con Git"
         },
-      ]
+      ],
+      repo: 'https://github.com/taticode/the-hashi-app'
     },
-    { id: uuidv4(),
-      name: "Sobre este portfolio",
-      link: "#",
-      description: "Más información sobre el proceso de creación de este portfolio, de diseño propio, creado con Angular ",
-      projectImg: "./assets/img/projects-cards/portfolio-design.webp",
-      tech:[
-        {
-          id: uuidv4(),
-          techName: "javascript",
-          description: "Javascript"
-        },
-        {
-          id: uuidv4(),
-          techName: "typescript",
-          description: "Typescript"
-        },
-        {
-          id: uuidv4(),
-          techName: "typescript",
-          description: "base de datos en servicio"
-        },
-        {
-          id: uuidv4(),
-          techName: "angular",
-          description: "Angular "
-        },
-        { 
-          id: uuidv4(),
-          techName: "sass",
-          description: "Sass "
-        },
-        { 
-          id: uuidv4(),
-          techName: "bem",
-          description: "BEM"
-        },
-        { 
-          id: uuidv4(),
-          techName: "github",
-          description: "Control de versiones con git"
-        },
-      ]
-    }
+
   ]
 
 
