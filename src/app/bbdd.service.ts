@@ -23,6 +23,7 @@ export class BbddService {
     { id: uuidv4(),
       name: "Ganache",
       link: "https://taticode.github.io/coffeeshopGanache/",
+      textLink: "Visitar proyecto",
       projectImg: "./assets/img/projects-cards/ganache.webp",
       description: "Proyecto sencillo realizado con HTML, CSS y Javascript. Diseño propio de una single page de una cafetería fictizia llamada Ganache",
       tech: [
@@ -52,6 +53,7 @@ export class BbddService {
     { id: uuidv4(),
       name: "Memory Game",
       link: "https://taticode.github.io/memory/",
+      textLink: "Visitar proyecto",
       projectImg: "./assets/img/projects-cards/captura.png",
       description: "Juego de memoria para aprender inglés",
       tech:[
@@ -78,9 +80,10 @@ export class BbddService {
     },
     { id: uuidv4(),
       name: "The Hashi",
-      link: "./the-hashi",
-      projectImg: "./assets/img/projects-cards/ramen-shifu-atocha.webp",
-      description: "Proyecto realizado en Angular, rediseñando una versión de The Fork pero más “japo”, mostrando sólo restaurantes asiáticos",
+      link: "https://github.com/taticode/the-hashi-app",
+      textLink: "En construcción",
+      projectImg: "./assets/img/projects-cards/building.png",
+      description: "Proyecto en construcción",
       tech:[
         {
           id: uuidv4(),

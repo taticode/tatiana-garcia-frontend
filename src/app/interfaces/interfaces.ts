@@ -5,6 +5,7 @@ export interface Iproject {
     id:          string;
     name:        string;
     link:        string;
+    textLink:    string;
     projectImg:  string;
     description: string;
     tech:        Itech[];

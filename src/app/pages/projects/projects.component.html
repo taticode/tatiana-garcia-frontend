@@ -8,7 +8,7 @@
                 <a class="cards__img--link" [href]="project.link" target="_blank" rel="nofollow noopener" aria-label="link para visitar proyecto">
                     <img [src]="project.projectImg" [alt]="project.tech.description" [title]="project.tech.description">
                     <div class="overlay">
-                        <h3 class="text">Visitar proyecto</h3>
+                        <h3 class="text">{{project.textLink}}</h3>
                     </div>
                 </a>
             </div>
