@@ -151,6 +151,7 @@ a{
         color: var(--btn-font-color);
         @include fillBtn;
         @include neumorphism;
+        font-size       : map-get($sizes , "size-btn" );
 
         cursor: pointer;
         transition: var(--transition);
@@ -220,13 +221,19 @@ a{
         .hero__title{
                 font-size: 2.4em;
         }
+        h2{
+                font-size: 1.8em;
+        }
+        h3{
+                font-size: 1.2em;
+        }
+        p, a{
+                font-size: 0.9em;
+        }
         .hero__subtitle{
                 font-size: 1.4em;
-        }
-        .btn, .btn-up{
-                padding: var(--p04) var(--p06);
         }
         .btn-up, .btn-down{
                 right: var(--p2);
         }
-    }
+}

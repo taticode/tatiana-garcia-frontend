@@ -33,3 +33,18 @@
     }
 
 }
+@media screen and (max-width: 960px) {
+    .skills{
+        &__picture{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .skills{
+        &__picture{
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -387,7 +387,7 @@ export class BbddService {
       rol: "Maquetación y desarrollo frontend con Angular Js",
       company: "NTT Data",
       period: "2020 - 2021",
-      task: "En este puesto desarrollé tareas de debuggin en Angular en una aplicación de gestión de ventas de una empresa de telefonía móvil. Metodología de trabajo agile y subida de cambios con pull requests. En este proyecto se trabajó mucho en equipo, los compañeros fueron inmejorables 🤩"
+      task: "En este puesto desarrollé tareas de resolución de bugs en Angular en una aplicación de gestión de ventas de una empresa de telefonía móvil. Metodología de trabajo agile y subida de cambios con pull requests. En este proyecto se trabajó mucho en equipo, los compañeros fueron inmejorables 🤩"
     },
     <Iexperience>
     { id: uuidv4(),
@@ -408,7 +408,7 @@ export class BbddService {
       rol: "Maquetación con Wordpress",
       company: "Sapos y Princesas",
       period: "2017",
-      task: "También una etapa muy buena con buenos compañeros. En esta revista digital maquetaba secciones nuevas de la revista con Wordpress y css"
+      task: "También una etapa muy buena con buenos compañeros. En esta revista digital maquetaba secciones nuevas de la revista con Wordpress y css y trabajé en el responsive de toda la web"
     },
 
   ]

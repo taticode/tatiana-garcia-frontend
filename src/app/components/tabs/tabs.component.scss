@@ -2,112 +2,16 @@
 @import 'src/styles.scss';
 
 .tabs{
-    @include gridTwoDifferentColums ( 1fr, 2fr, var(--p2));
-
-
-    &__menu {
-        @include flexible(flex, column, nowrap, flex-start, center);
-
-        &__item{
-            width: 100%;
-
-        }
-
-        &__item:not(:last-child){
-            margin-bottom: var(--p06);
-        }
-
-        &__item.active{
-            background-color: var(--accent-dark);
-        }
-    }
-    &__info{ 
-        display: none;
-        opacity: 0;
-
-        &.active {
-            display: block;
-            opacity: 100%;
-            }
-
-    }
-
-    &__content{
-        @include gridTwoDifferentColums ( 1fr, 2fr, var(--p2));
-        height: inherit;
-
-    }
-    &__picture{
-        @include flexible(flex, column, nowrap, flex-start, flex-start);
-        &--img {
-            border-radius: var(--b-radius);
-            width: 100%;
-            height: 10em;
-        }
-
-
-        &--item{
-            @include flexible(flex, row, wrap, flex-start, center);
-            width: 100%;
-            padding: var(--p06) 0;
-            border-bottom: 1px solid var(--font-color);
-
-            img {
-                width: var(--p1);
-                height: var(--p1);
-                margin-right: var(--p06);
-                object-fit: contain;
-            }
-            p{
-                padding-bottom: 0;
-            }
-        }
-
-        &--skills{
-            @include gridColumnRepeat ( 2, var(--p1));
-            width: 100%;
-            margin-top: var(--p1);
-
-        }
-    }
-
-    &__datos{
-        @include flexible(flex, column, nowrap, flex-start, flex-start);
+    img{
         border-radius: var(--b-radius);
-        a{
-            margin-top: var(--p1);
-            font-weight: 600;
-            width: fit-content;
-            @include fillTipo;
-            background-image: linear-gradient(90deg, var(--accent-dark), var(--accent-dark) 50%, var(--accent) 0);
-
-        }
     }
-
-
-    &__title{
-        margin-bottom: var(--p06);
-    }
-    
-
-
-}
-
-
-
-@media screen and (max-width: 960px){
-    .tabs{
-        &__menu{
-            display: grid;
-            gap: var(--p1);
-            grid-template-columns: repeat(2, 1fr);
-            align-items: stretch;
-
-            &__item:not(:last-child){
-                margin-bottom: 0;
-            }
-        }
-
+    &__item{
+        @include gridTwoDifferentColums (1fr, 2fr, var(--p2));
+        margin-bottom: var(--p2);
+        padding: var(--p2);
+        background: var(--background-section);
+        border-radius: var(--b-radius);
     }
 
 }
+

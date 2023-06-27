@@ -1,43 +1,21 @@
-<section class="tabs">
 
-    <ul class="tabs__menu">
-        <li class="tabs__menu__item btn" *ngFor="let tab of dataTabs; let i = index" [ngClass]="{'active': seleccionado === i }" (click)="setSeleccionado(i)">
-            {{tab.textItem}}
-        </li>
-    </ul>
+    <ul class="tabs">
+        <li class="tabs__item" *ngFor="let tab of dataTabs; let i = index" (click)="setSeleccionado(i)">
+            <img class="tabs__picture--img" [src]="tab.thumbnail" [alt]="tab.tumbnailAlt">
 
-    
-    <article class="tabs__info" *ngFor="let tab of dataTabs; let i = index" [ngClass]="{'active': seleccionado === i}">
-
-        <section class="tabs__content">
-
-            <div class="tabs__picture">
-                <img class="tabs__picture--img" [src]="tab.thumbnail" [alt]="tab.tumbnailAlt">
-                <div class="tabs__picture--skills" *ngIf="tab.skill">
-                    <picture class="tabs__picture--item" *ngFor="let skill of tab.skills" >
-                        <img  [src]=" activePath + skill.img+ '.svg'" [alt]="skill.alt" [title]="skill.alt">
-                        <p>{{skill.alt}}</p>
-                    </picture>
-                </div>
-
-            </div>
             <div class="tabs__datos">
-                <h3 class="tabs__title">Información</h3>
+                <h3 class="tabs__title">{{tab.textItem}}</h3>
                 <p>Escuela: {{tab.escuela}}</p>
                 <p>Duración: {{tab.horas}}</p>
                 <p>Fecha de fin: {{tab.finalizado}}</p>
-
-
-                <div class="tabs__description">
-                    <h4 class="tabs__title">Descripción</h4>
-                    <p>{{tab.knowledge}}</p>
-                </div>
-                <a *ngIf="tab.link" href="{{tab.link}}" target="_blank" rel="nofollow noopener" aria-label="enlace al curso">Ir al curso</a>
+                <h4>Descripción</h4>
+                <p>{{tab.knowledge}}</p>
+                <a class="btn" *ngIf="tab.link" href="{{tab.link}}" target="_blank" rel="nofollow noopener" aria-label="enlace al curso">Ir al curso</a>
 
 
             </div>
+        </li>
 
-        </section>
+    </ul>
 
-    </article>
-</section>
+
